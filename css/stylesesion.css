@@ -1,0 +1,159 @@
+
+.toly-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*align-items: center;
+    justify-content: center;*/
+    grid-gap: 10px;
+    color: black;
+}
+
+.toly-don-divide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.toly-main-in-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.color-main{
+    color: #33478C;
+}
+
+.toly-round-picture{
+    border-radius: 20%;
+}
+
+#toly-donacion{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+#toly-crearC{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: darkgreen;
+
+}
+
+.toly-general{
+    background-color: white;
+    color: black;
+}
+
+#toly-btn-donar{
+    color: white;
+    background-color: green;
+}
+
+.toly-input-campus{
+    color: darkgreen;
+    background-color: #B6D96A;
+    border-color: darkgreen;
+    margin: 6px;
+    font-size: 32px;
+}
+
+.toly-without-hiper{
+    color: darkgreen;
+    font-size: 24px;
+}
+
+#toly-btn-inicio{
+    color: white;
+    background-color: silver;
+    border: 0px;
+}
+
+#toly-btn-Acceder{
+    color: black;
+    background-color: greenyellow;
+    border: 0px;
+    width: 400px;    
+    border-color: black;
+}
+
+#toly-btn-crear{
+    color: black;
+    background-color: greenyellow;
+    border: 0px;
+    width: 400px;    
+    border-color: black;
+}
+
+
+.toly-reb{
+    height: 150px;
+    width: 125px;
+}
+
+.toly-remember-olvidar{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19.5px;
+    
+}
+
+.toly-remember{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+#toly-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: grey;
+}
+
+.toly-label-sep{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: silver;
+    font-style: italic;
+}
+
+#toly-nac{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26;
+}
+
+#toly-date{
+    color: darkgreen;
+}
+
+
+#toly-inicio-c{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+.toly-img-center{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.toly-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

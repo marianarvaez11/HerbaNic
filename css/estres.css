@@ -1,0 +1,143 @@
+/* Images Loading */
+#tabletaBrahmi {
+    background-image: url('../img/card-images/ProductCards/tabletaBrahmi.png');
+}
+
+#capsulaImmune {
+    background-image: url('../img/card-images/ProductCards/capsulaImmune.png');
+}
+
+#capsulaBreathAid {
+    background-image: url('../img/card-images/ProductCards/capsulaBreathAid.png');
+}
+
+#capsulaSleepAid {
+    background-image: url('../img/card-images/ProductCards/capsulaSleepAid.png');
+}
+
+#enferImg {
+    background-image: url('../img/card-images/ProductCards/EstresImg.png');
+}
+
+#parentEstres {
+    margin-top: 200px;
+}
+
+.prodCotizados .row:nth-child(2) {
+    margin-top: 50px;
+}
+
+.PadFreqDescription {
+    background-color: #F2FAD4;
+    padding: 20px;
+}
+
+.infoCatContainer {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid transparent;
+    background-color: inherit;
+}
+
+.infoCatContainer:hover {
+    transition: 0.2s;
+    background-color: #dce4c3;
+    cursor: pointer;
+}
+
+.infoCatContainer:active {
+    transition: 0.2s;
+    background-color: white;
+    border: 2px solid #9CD918;
+}
+
+.iconPad {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.enfermImgContainer {
+    height: 100%;
+}
+
+.imgContainer {
+    height: 60%;
+    background-color: #E8F0CC;
+}
+
+.imgContainer .img {
+    width: 90%;
+    height: 95%;
+    margin: 2.5% 5%;
+    position: relative;
+    background-position: start;
+    background-size: cover;
+}
+
+.imgContainer .img>div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #E8F0CC;
+    padding: 10px 0;
+}
+
+.img:nth-child(2),
+.img:nth-child(3) {
+    visibility: hidden;
+}
+
+.imgContainer>div>div>span {
+    font-size: 1.5em;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.enfermDescription {
+    background-color: #4B592C;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.enfermDescription .EnfermInfoMenu {
+    padding: 20px;
+}
+
+.EnfermInfoMenu h4 {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.EnfermInfoMenu h4:hover{
+    border: 1px solid #9CD918;
+    background-color: #2F5E19;
+}
+
+.EnfermInfoText{
+    font-size: 1.2em;
+}
+
+#enfTitle{
+    font-style: italic;
+}
+
+#tarjNoImg1{
+    min-height: 20vw;
+    background-color: #E8F0CC;
+    padding: 20px;
+    position: relative;
+}
+
+#tarjNoImg1 h1{
+    font-size: 4em;
+}
+
+#tarjNoImg1 button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}

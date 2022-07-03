@@ -1,0 +1,58 @@
+body * {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.MainView {
+    position: absolute;
+}
+
+.bi {
+    margin-right: 5px;
+}
+
+.customNavBar {
+    background-color: #F2FAD4 !important;
+}
+
+.Footer {
+    margin-top: 100px;
+    background-color: #E8F0CC;
+    position: relative;
+    bottom: 0;
+    padding: 40px;
+    height: auto;
+}
+
+.Footer a{
+    color: gray;
+}
+
+.HeaderPrincipal ul li,
+.SubHeader {
+    font-weight: bold !important;
+}
+
+/* Hacer que los navbar se ordenen el de arriba encima del otro */
+
+.HeaderPrincipal {
+    z-index: 2 !important;
+}
+
+.SubHeader {
+    z-index: 1 !important;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1031;
+    cursor: pointer;
+}

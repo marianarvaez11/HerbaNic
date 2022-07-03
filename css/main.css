@@ -1,0 +1,228 @@
+
+/* Images Loading */
+#cardImage1 {
+    background-image: url('../img/card-images/cardImage1.png');
+}
+
+#cardImage2 {
+    background-image: url('../img/card-images/cardImage2.png');
+}
+
+#cardImage3 {
+    background-image: url('../img/card-images/cardImage3.png');
+}
+
+#cardImage4 {
+    background-image: url('../img/card-images/cardImage4.png');
+}
+
+#cardImage5 {
+    background-image: url('../img/card-images/cardImage5.png');
+}
+
+#cardImage5:hover {
+    background-image: url('../img/card-images/cardImage5Dark.png');
+    transition: 0.5s;
+}
+
+#cardImage6 {
+    background-image: url('../img/card-images/cardImage6.png');
+}
+
+#cardImage6:hover {
+    background-image: url('../img/card-images/cardImage6Dark.png');
+    transition: 0.5s;
+}
+
+/* Animations */
+@keyframes easeInCardTitle {
+    from {
+        height: 0px;
+        transform: translateY(10px);
+    }
+
+    to {
+        height: 200px;
+        transform: translateY(0px);
+    }
+}
+
+
+.ParentAppContainer {
+    padding: 0;
+    margin: 0;
+    /* border: 3px solid red; */
+}
+
+.newChild {
+    margin: 75px auto 0 auto;
+}
+
+.newChild .row {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#parentApp {
+    margin-top: 130px;
+}
+
+#background1,
+#background2 {
+    display: block;
+}
+
+#background1 {
+    /* background-color: #3E4234; */
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(62, 66, 52, 1) 12%, rgba(83, 166, 45, 1) 100%);
+    height: 30vh;
+    z-index: 0;
+}
+
+#background2 {
+    background-image: url('../img/inicio2.jpg');
+    height: 50vh;
+    background-position-y: calc(25%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+    z-index: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 5px rgba(2, 0, 36, 0.2);
+}
+
+.TextMainBackground2 {
+    /* text-align: center; */
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.TextMainBackground2 h1 {
+    font-size: 4.5em;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: #4B592C;
+}
+
+.TextMainBackground2 h1 span {
+    color: #53A62D;
+}
+
+#explorarBtnMain {
+    background-color: #9CD918 !important;
+    border: none;
+    color: black;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.padeFreqMain .row:nth-child(2) {
+    margin-top: 50px;
+}
+
+.tituloParent {
+    color: #53A62D;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.subtituloParent {
+    color: #4B592C;
+    font-size: 3.5em;
+}
+
+.subtituloParent span {
+    color: #53A62D;
+}
+
+.tituloParentXs{
+    color: #53A62D;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.subtituloParentXs{
+    color: #4B592C;
+    font-size: 2.3em;
+}
+
+.cardImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.tarj .title{
+    margin-top: 15px;
+}
+
+.tarj .description {
+    font-size: 1.5em;
+    height: 100px;
+    letter-spacing: 2px;
+}
+
+.tarj .cardImage {
+    height: 20vw;
+}
+
+.bannerAntiInf {
+    background-color: #E8F0CC;
+    padding: 50px !important;
+    position: relative;
+    color: #4B592C;
+    font-weight: bolder;
+    box-shadow: 0 5px 10px 5px rgba(2, 0, 36, 0.2);
+}
+
+.bannerAntiInf h3 span {
+    color: #2F5E19;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+#btnVerOfertaEspecial1 {
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.tarjTestimonios .cardImage {
+    height: 40vw;
+    position: relative;
+}
+
+
+.cardImage:hover div {
+    animation: easeInCardTitle 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.cardImage div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    background-color: #E8F0CC;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    max-height: 200px;
+}
+
+#header { display: flex; flex-direction: row; padding: 8px 24px; align-items: center; justify-content: space-between; }
+
+a:link, a:visited, a:active { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#nav-bar { padding: 8px 24px; display: flex; flex-direction: row; gap: 24px; align-items: center; justify-content: left; }
