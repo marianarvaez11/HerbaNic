@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="img/bootstrap icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="css/estres.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
@@ -37,80 +38,79 @@
 </head>
 
 <body>
-    <div id="overlay" onclick="overlay_off(); inicio_sesion_off()"></div>
+    <div id="overlay" onclick="overlay_off()"></div>
     <div id="inicio-sesion">
-        <button onclick="overlay_off(); inicio_sesion_off()" class="borderless-transparent close"></button>
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
         <div class="flex-column-center">
             <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
-            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a href="#">Regístrate</a></p>
+            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a onclick="change('inicio-sesion')"
+                    href="#">Regístrate</a></p>
             <form class="flex-column-center" action="">
-                <input type="text" class="body-1" name="" id="" placeholder="Correo electrónico">
-                <input type="text" class="body-1" name="" id="" placeholder="Contraseña">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
                 <button class="button secondary-color">Continuar</button>
             </form>
             <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste tu contraseña?</a>
         </div>
     </div>
-    <div class="container-fluid MainView">
-        <nav class="navbar navbar-expand-lg bg-light fixed-top Header" id="HeaderPrincipal">
-            <div class="container-fluid col-lg-10 offset-lg-1">
-                <a class="navbar-brand col-lg-3" href="index.html"><img src="img/LogoHerbaNic.png" alt="LogoHerbaNic"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-lg-6 offset-lg-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav col-lg-2">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Categoría
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
-                                <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
-                                <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
-                                <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex col-lg-4" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                    </form>
 
-                    <ul class="navbar-nav col-lg-6">
-                        <li class="nav-item col">
-                            <button class="nav-link p-3 btn-inicio-sesion" onclick="overlay_on(); inicio_sesion_on()"><i class="bi bi-person"></i>Iniciar Sesión
-                            </button>
-                        </li>
-
-                        <li class="nav-item col">
-                            <a class="nav-link p-3" href="#"> <i class="bi bi-cart"></i>Carrito</a>
-                        </li>
-                    </ul>
-                </div>
+    <div id="registro">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <div style="gap: 8px" class="flex-row-center headline-5 text-align-center">Te damos la bienvenida a
+                <div class="logo"></div>
             </div>
-        </nav>
-
-        <nav class="navbar navbar-expand-lg bg-light fixed-top SubHeader">
-            <div class="container-fluid col-lg-12 customNavBar">
-                <ul class="navbar-nav col-lg-6 offset-lg-1">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Products.html">Tienda</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="aprender-mas.html">Aprender</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+            <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
+            <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a onclick="change('registro')"
+                    href="#">Inicia sesión</a></p>
+            <form class="flex-column-center" action="">
+                <input type="text" class="body-1" name="" id="" placeholder="Nombre">
+                <input type="text" class="body-1" name="" id="" placeholder="Apellido">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Crear cuenta</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid MainView">
+        <header id="header" class="HeaderPrincipal">
+            <a href="index.html">
+                <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
+            </a>
+            <div class="container-ht content-center gap-16">
+                <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
+                    <li class="nav-item dropdown button text-button-icon on-background">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoría
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
+                            <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
+                            <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
+                            <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
+                        </ul>
                     </li>
                 </ul>
+                <div style="width: fit-content;" class="search-div">
+                    <input type="search" name="search" class="body-1
+                        on-background outline surface" id="search-bar" placeholder="Buscar">
+                </div>
+                <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
+                    <div style="display: inline-block;" class="user"></div>
+                    Iniciar sesión
+                </a>
+                <a href="#" class="button on-background icon-button">
+                    <div style="display: inline-block;" class="cart"></div>
+                </a>
             </div>
+        </header>
+
+        <nav id="nav-bar" class="surface SubHeader">
+            <a href="index.html" class="body-1 on-background">Inicio</a>
+            <a href="Products.html" class="body-1 on-background">Tienda</a>
+            <a href="aprender-mas.html" class="body-1 on-background">Aprender</a>
+            <a href="sobre-nosotros.html" class="body-1 on-background">Sobre nosotros</a>
         </nav>
         
         <div class="container-fluid ParentEstresContainer" id="parentEstres">
@@ -330,7 +330,6 @@
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/setHeader2MarginTop.js"></script>
-    <script src="js/operations.js"></script>
 </body>
 
 </html>

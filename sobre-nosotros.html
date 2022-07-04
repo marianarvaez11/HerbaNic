@@ -1,199 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./img/brand/favicon.png"
-            type="image/x-icon">
 
-        <!-- css styles -->
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/color.css">
-        <link rel="stylesheet" href="./css/typography.css">
-        <link rel="stylesheet" href="./css/stylesheet.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
-        <link rel="stylesheet" href="css/color.css">
-        <link rel="stylesheet" href="css/typography.css">
-        <script src="js/overlay.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/brand/favicon.png" type="image/x-icon">
 
-        <!-- google icons -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet">
+    <!-- css styles -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <script src="js/overlay.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/setHeader2MarginTop.js"></script>
 
-        <title>HerbaNic</title>
-    </head>
-    <body>
-        <header id="header">
-            <img style="height: 3.5rem;"
-                src="./img/brand/herbaNic-horizontal-tp.png" alt="Logotipo">
-            <div class="container-ht content-center gap-16">
-                <a href="#" class="button text-button-icon on-background">Categoría<span
-                        class="material-icons">
-                        expand_more
-                    </span>
-                </a>
-                <div style="width: fit-content;" class="search-div">
-                    <input type="search" name="search" class="body-1
-                        on-background outline surface" id="search-bar"
-                        placeholder="Buscar">
-                    <span class="on-background icon-search material-icons
-                        md-24">
-                        search
-                    </span>
-                </div>
-                <a href="#" class="text-button-icon button on-background">
-                    Inciar sesión
-                    <span class="material-icons md-24 on-background">
-                        account_circle
-                    </span>
-                </a>
-                <a href="#" class="button on-background icon-button">
-                    <span class="material-icons md-24">
-                        shopping_cart
-                    </span>
-                </a>
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--  -->
+
+    <title>HerbaNic</title>
+</head>
+
+<body>
+    <div id="overlay" onclick="overlay_off()"></div>
+    <div id="inicio-sesion">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
+            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a onclick="change('inicio-sesion')"
+                    href="#">Regístrate</a></p>
+            <form class="flex-column-center" action="">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Continuar</button>
+            </form>
+            <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+
+    <div id="registro">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <div style="gap: 8px" class="flex-row-center headline-5 text-align-center">Te damos la bienvenida a
+                <div class="logo"></div>
             </div>
-        </header>
+            <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
+            <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a onclick="change('registro')"
+                    href="#">Inicia sesión</a></p>
+            <form class="flex-column-center" action="">
+                <input type="text" class="body-1" name="" id="" placeholder="Nombre">
+                <input type="text" class="body-1" name="" id="" placeholder="Apellido">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Crear cuenta</button>
+            </form>
+        </div>
+    </div>
 
-        <nav id="nav-bar" class="surface">
-            <a href="index.html" class="body-1 on-background">Inicio</a>
-            <span class="material-icons md-24 on-background">
-                chevron_right
-            </span>
-            <a href="sobre-nosotros.html" class="body-1 on-background">Sobre nosostros</a>
-        </nav>
+    <header id="header" class="HeaderPrincipal">
+        <a href="index.html">
+            <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
+        </a>
+        <div class="container-ht content-center gap-16">
+            <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
+                <li class="nav-item dropdown button text-button-icon on-background">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoría
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
+                        <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
+                        <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
+                        <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div style="width: fit-content;" class="search-div">
+                <input type="search" name="search" class="body-1
+                    on-background outline surface" id="search-bar" placeholder="Buscar">
+            </div>
+            <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
+                <div style="display: inline-block;" class="user"></div>
+                Iniciar sesión
+            </a>
+            <a href="#" class="button on-background icon-button">
+                <div style="display: inline-block;" class="cart"></div>
+            </a>
+        </div>
+    </header>
 
-        <main class="container-vt pd-24 gap-72">
-            <div class="container-ht content-center gap-24">
-                <div class="container-vt gap-12">
-                    <span class="overline primary-color">Información</span>
-                    <h3 class="headline-3 on-background">¿Qué es <span class="primary-color">HerbaNic?</span></h3>
-                    <p class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.</p>
+    <nav id="nav-bar" class="surface">
+        <a href="index.html" class="body-1 on-background">Inicio</a>
+        <span class="material-icons md-24 on-background">
+            chevron_right
+        </span>
+        <a href="sobre-nosotros.html" class="body-1 on-background">Sobre nosostros</a>
+    </nav>
+
+    <main class="container-vt pd-24 gap-72">
+        <div class="container-ht content-center gap-24">
+            <div class="container-vt gap-12">
+                <span class="overline primary-color">Información</span>
+                <h3 class="headline-3 on-background">¿Qué es <span class="primary-color">HerbaNic?</span></h3>
+                <p class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el
+                    uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.
+                </p>
+            </div>
+            <div style="background-image: url(img/arbol-brisa.jpg);" class="container-img full-width br-all-24">
+
+            </div>
+        </div>
+
+        <div class="container-ht content-center gap-24 pd-24 surface br-all-24">
+            <div style="background-image: url(img/plantas.jpg);" class="container-img full-width br-all-24">
+
+            </div>
+            <div class="container-vt gap-12">
+                <div class="container-ht gap-12">
+                    <button class="button text-button primary-color">Misión</button>
+                    <button class="button text-button primary-color">Visión</button>
+                    <button class="button text-button primary-color">Valores</button>
                 </div>
-                <div style="background-image: url(img/arbol-brisa.jpg);" class="container-img full-width br-all-24">
-                    
-                </div>
+                <h3 class="headline-3 on-background">Nuestra misión</h3>
+                <p class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el
+                    uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-vt gap-48">
+            <div class="container-vt gap-12">
+                <span class="overline on-background">Comunidad</span>
+                <h3 class="headline-3 on-background">Nuestro<span class="primary-color">compromiso</span> con el cliente
+                </h3>
             </div>
 
-            <div class="container-ht content-center gap-24 pd-24 surface br-all-24">
-                <div style="background-image: url(img/plantas.jpg);" class="container-img full-width br-all-24">
-                    
+            <div class="container-ht gap-24 wth-full">
+                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
+                    <div class="container-ht gap-12 on-background">
+                        <span class="material-icons">
+                            compost
+                        </span>
+                        <h5 class="headline-5">Producto</h5>
+                    </div>
+                    <p class="body-2">Nuestro principal objetivo es ofrecer una alternativa 100% natural para el consumo
+                        de medicinas.</p>
                 </div>
+
+                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
+                    <div class="container-ht gap-12 on-background">
+                        <span class="material-icons">
+                            attach_money
+                        </span>
+                        <h5 class="headline-5">Precio</h5>
+                    </div>
+                    <p class="body-2">No solo ofrecemos una alternativa 100% natural, sino que también precios.</p>
+                </div>
+
+                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
+                    <div class="container-ht gap-12 on-background">
+                        <span class="material-icons">
+                            recycling
+                        </span>
+                        <h5 class="headline-5">Calidad</h5>
+                    </div>
+                    <p class="body-2">La calidad de nuestros productos está muy por encima de la competencia, ya que es
+                        nuestra responsabilidad.</p>
+                </div>
+
+                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
+                    <div class="container-ht gap-12 on-background">
+                        <span class="material-icons">
+                            two_wheeler
+                        </span>
+                        <h5 class="headline-5">Distribución</h5>
+                    </div>
+                    <p class="body-2">Tenemos como objetivo mantener presente nuestros productos, brindando servicios de
+                        entrega.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-vt gap-48">
+            <div class="container-vt gap-12">
+                <span class="overline on-background">Comunidad</span>
+                <h3 class="headline-3 on-background"><span class="primary-color">Testimonios</span> de pacientes</h3>
+            </div>
+            <div class="container-ht wth-full pd-48 gap-24 background-dark br-all-24">
                 <div class="container-vt gap-12">
                     <div class="container-ht gap-12">
-                        <button class="button text-button primary-color">Misión</button>
-                        <button class="button text-button primary-color">Visión</button>
-                        <button class="button text-button primary-color">Valores</button>
-                    </div>
-                    <h3 class="headline-3 on-background">Nuestra misión</h3>
-                    <p class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.</p>
-                </div>
-            </div>
-
-            <div class="container-vt gap-48">
-                <div class="container-vt gap-12">
-                    <span class="overline on-background">Comunidad</span>
-                    <h3 class="headline-3 on-background">Nuestro<span class="primary-color">compromiso</span> con el cliente</h3>
-                </div>
-
-                <div class="container-ht gap-24 wth-full">
-                    <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                        <div class="container-ht gap-12 on-background">
+                        <button class="material-icons outline-icon-button on-background-dark">
                             <span class="material-icons">
-                                compost
-                                </span>
-                            <h5 class="headline-5">Producto</h5>
-                        </div>
-                        <p class="body-2">Nuestro principal objetivo es ofrecer una alternativa 100% natural para el consumo de medicinas.</p>
+                                chevron_left
+                            </span>
+                        </button>
+                        <button class="material-icons outline-icon-button on-background-dark">
+                            chevron_right
+                        </button>
                     </div>
-
-                    <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                        <div class="container-ht gap-12 on-background">
-                            <span class="material-icons">
-                                attach_money
-                                </span>
-                            <h5 class="headline-5">Precio</h5>
+                    <p class="body-1 on-background-dark">“Estoy muy contento con el servicio y los productos de
+                        HerbaNic, no solo es una publicidad, sino que es veraz la calidad que ellos ofrecen.”</p>
+                    <div class="container-ht gap-12">
+                        <img class="img-perfil" src="img/person.png" alt="Persona">
+                        <div class="container-vt">
+                            <a href="#" class="button on-background-dark">Joseph Martínez</a>
+                            <span class="caption on-background-dark">Paciente</span>
                         </div>
-                        <p class="body-2">No solo ofrecemos una alternativa 100% natural, sino que también precios.</p>
-                    </div>
-
-                    <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                        <div class="container-ht gap-12 on-background">
-                            <span class="material-icons">
-                                recycling
-                                </span>
-                            <h5 class="headline-5">Calidad</h5>
-                        </div>
-                        <p class="body-2">La calidad de nuestros productos está muy por encima de la competencia, ya que es nuestra responsabilidad.</p>
-                    </div>
-
-                    <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                        <div class="container-ht gap-12 on-background">
-                            <span class="material-icons">
-                                two_wheeler
-                                </span>
-                            <h5 class="headline-5">Distribución</h5>
-                        </div>
-                        <p class="body-2">Tenemos como objetivo mantener presente nuestros productos, brindando servicios de entrega.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="container-vt gap-48">
-                <div class="container-vt gap-12">
-                    <span class="overline on-background">Comunidad</span>
-                    <h3 class="headline-3 on-background"><span class="primary-color">Testimonios</span> de pacientes</h3>
-                </div>
-                <div class="container-ht wth-full pd-48 gap-24 background-dark br-all-24">
-                    <div class="container-vt gap-12">
-                        <div class="container-ht gap-12">
-                            <button class="material-icons outline-icon-button on-background-dark">
-                                <span class="material-icons">
-                                    chevron_left
-                                    </span>
-                            </button>
-                            <button class="material-icons outline-icon-button on-background-dark">
-                                chevron_right
-                            </button>
+                <div class="container-vt gap-24">
+                    <div class="container-ht gap-24 wth-full">
+                        <div class="container-vt">
+                            <h3 class="headline-3 on-background-dark">450+</h3>
+                            <p class="subhead-1 on-background-dark">Productos disponibles</p>
                         </div>
-                        <p class="body-1 on-background-dark">“Estoy muy contento con el servicio y los productos de HerbaNic, no solo es una publicidad, sino que es veraz la calidad que ellos ofrecen.”</p>
-                        <div class="container-ht gap-12">
-                            <img class="img-perfil" src="img/person.png" alt="Persona">
-                            <div class="container-vt">
-                                <a href="#" class="button on-background-dark">Joseph Martínez</a>
-                                <span class="caption on-background-dark">Paciente</span>
-                            </div>
+                        <div class="container-vt">
+                            <h3 class="headline-3 on-background-dark">4.5k</h3>
+                            <p class="subhead-1 on-background-dark">Comunidad HerbaNic</p>
                         </div>
                     </div>
 
-                    <div class="container-vt gap-24">
-                        <div class="container-ht gap-24 wth-full">
-                            <div class="container-vt">
-                                <h3 class="headline-3 on-background-dark">450+</h3>
-                                <p class="subhead-1 on-background-dark">Productos disponibles</p>
-                            </div>
-                            <div class="container-vt">
-                                <h3 class="headline-3 on-background-dark">4.5k</h3>
-                                <p class="subhead-1 on-background-dark">Comunidad HerbaNic</p>
-                            </div>
+                    <div class="container-ht gap-24 wth-full">
+                        <div class="container-vt">
+                            <h3 class="headline-3 on-background-dark">150+</h3>
+                            <p class="subhead-1 on-background-dark">Contribuyentes al proyecto</p>
                         </div>
-
-                        <div class="container-ht gap-24 wth-full">
-                            <div class="container-vt">
-                                <h3 class="headline-3 on-background-dark">150+</h3>
-                                <p class="subhead-1 on-background-dark">Contribuyentes al proyecto</p>
-                            </div>
-                            <div class="container-vt">
-                                <h3 class="headline-3 on-background-dark">44+</h3>
-                                <p class="subhead-1 on-background-dark">Laboratorios en el país</p>
-                            </div>
+                        <div class="container-vt">
+                            <h3 class="headline-3 on-background-dark">44+</h3>
+                            <p class="subhead-1 on-background-dark">Laboratorios en el país</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+</body>
 
-    </body>
 </html>
