@@ -1,0 +1,102 @@
+#footTeamTo{
+    background-color: #B6D96A;
+    margin: 2px;
+}
+
+.footerTolyContainer1{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-gap: 10px; 
+}
+
+.footerTolyCard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.pictureTolyFooter{
+    width: 400px;
+    height: 200px;
+}
+
+.encabezadoFooterToly{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subFooterToly{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.phoneToly{
+    width: 30px;
+    height: 30px;
+}
+
+.footerTolyContainer2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.footerTolyCard2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.herbaFooter{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.descriptionFooter{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footerTolyContainer3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.footerTolyCard3{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.footerTolyContainer4{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 6fr;
+    margin: 15px;
+}
+
+.footerTolyCard4{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.redesFooterToly{
+    height: 40px;
+    width: 40px;
+}
+
+.ultimateFooterLyr{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}

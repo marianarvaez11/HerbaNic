@@ -1,0 +1,149 @@
+#backgroundToly1 {
+    background-image: url('../img/aprender/inicio.png');
+    height: 50vh;
+    background-position-y: calc(25%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -200px;
+    z-index: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 5px rgba(2, 0, 36, 0.2);
+}
+
+#backgroundTp1 {
+    display: block;
+    /* background-color: #3E4234; */
+    background: white;
+    height: 30vh;
+    z-index: 0;
+}
+
+.lyricToly {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 26px !important;
+    color: white !important;
+}
+
+.CentroToly {
+    text-align: center;
+    align-items: center;
+}
+
+.divisionToly {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.divisionTolyCard {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.pictureToly {
+    width: 150px;
+    height: 150px;
+}
+
+.divisionTodas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.divisionTodasCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.lyrT {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: green;
+    margin: 20px 0px 0px 0px;
+}
+
+.lyrT2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: black;
+    margin: 20px 0px 0px 0px;
+}
+
+.lyrT3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: black;
+    margin: 0px 0px 0px 20px;
+}
+
+.encabezadoLista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.encabezadoListaCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.encabezadoLyric{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.flechaToly{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+
+.flechaTolyCard1{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.flechaTolyCard2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: right;
+    align-items: flex-start;
+}
+
+.pictureTolyFlecha{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
