@@ -1,23 +1,35 @@
-function inicio_sesion_on() {
-    document.getElementById("inicio-sesion").style.display = "block";
-}
+var activar = "";
 
-function inicio_sesion_off() {
-    document.getElementById("inicio-sesion").style.display = "none";
-}
-
-function overlay_on() {
+function overlay_on(activar) {
     document.getElementById("overlay").style.display = "block";
+    if (activar == "inicio-sesion") {
+        document.getElementById("inicio-sesion").style.display = "block";
+    } else {
+        document.getElementById("registro").style.display = "block";
+    }
 }
 
 function overlay_off() {
     document.getElementById("overlay").style.display = "none";
+    if (document.getElementById("inicio-sesion").style.display == "block") {
+        document.getElementById("inicio-sesion").style.display = "none";
+    } else {
+        document.getElementById("registro").style.display = "none";
+    }
 }
 
-function registro_on() {
-    document.getElementById("registro").style.display = "block";
-}
+var activo = "";
 
-function registro_off() {
-    document.getElementById("registro").style.display = "none";
+function change(activo) {
+    switch (activo) {
+        case "inicio-sesion":
+            document.getElementById("inicio-sesion").style.display = "none";
+            document.getElementById("registro").style.display = "block";
+            break;
+
+        case "registro":
+            document.getElementById("registro").style.display = "none";
+            document.getElementById("inicio-sesion").style.display = "block";
+            break;
+    }
 }

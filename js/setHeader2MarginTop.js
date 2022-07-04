@@ -1,17 +1,17 @@
-$('#HeaderPrincipal').on('show.bs.collapse', function () {
+$('.HeaderPrincipal').on('show.bs.collapse', function () {
     // do something…
     setTimeout(() => {
-        let header1 = document.getElementById("HeaderPrincipal");
+        let header1 = document.getElementsByClassName("HeaderPrincipal");
         let header2 = document.getElementsByClassName('SubHeader')[0];
         let computedStyle = window.getComputedStyle(header1, null);
         header2.style.marginTop = computedStyle['height'];
     }, 250);
 })
 
-$('#HeaderPrincipal').on('hide.bs.collapse', function () {
+$('.HeaderPrincipal').on('hide.bs.collapse', function () {
     // do something…
     setTimeout(() => {
-        let header1 = document.getElementById("HeaderPrincipal");
+        let header1 = document.getElementsByClassName("HeaderPrincipal");
         let header2 = document.getElementsByClassName('SubHeader')[0];
         let computedStyle = window.getComputedStyle(header1, null);
         header2.style.marginTop = `${computedStyle.height.split('px')[0] - 10}px`
@@ -59,7 +59,18 @@ function selectCorrectIllness(illness) {
 moveinY(900,0.1);
 let path = window.document.location.hash;
 console.log(path.slice(1,path.length));
-selectCorrectIllness(path.slice(0,1));
+selectCorrectIllness(path.slice(1, path.length));
+
+function validatePath(path){
+    if (path.slice(1,path.length) == 'estresContainer' || path.slice(1,path.length) == 'indigContainer' || path.slice(1,path.length) == 'insomContainer') {
+        selectCorrectIllness(path.slice(1, path.length));
+    }
+}
+
+window.addEventListener('hashchange',() => {
+    path = window.document.location.hash;
+    validatePath(path.toString());
+})
 
 let enfermSelectEstres = document.querySelector('#estresContainer');
 let enfermSelectIndigestion = document.querySelector('#indigContainer');
