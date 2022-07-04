@@ -1,7 +1,3 @@
-body * {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Radio Canada', sans-serif;
-}
 
 .MainView {
     position: absolute;
@@ -53,6 +49,37 @@ body * {
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1031;
+    z-index: 4;
     cursor: pointer;
+}
+
+.cart{
+    height: 24px;
+    width: 24px;
+    background-image: url('../icons/shopping-cart.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user{
+    height: 24px;
+    width: 24px;
+    background-image: url('../icons/user.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    width: 191px;
+    height: 44px;
+    background-image: url("../img/brand/herbaNic-horizontal-tp.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+    background-color: var(--tertiary-color) !important;
 }
