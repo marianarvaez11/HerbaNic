@@ -1,6 +1,9 @@
-#footTeamTo{
+.footTeamTo{
     background-color: #B6D96A;
     margin: 2px;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .footerTolyContainer1{
@@ -19,29 +22,31 @@
 }
 
 .pictureTolyFooter{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;;
 }
 
 .encabezadoFooterToly{
-    font-size: 25px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .subFooterToly{
-    font-size: 22px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 .phoneToly{
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 }
 
 .footerTolyContainer2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5pxpx;
 }
 
 .footerTolyCard2{
@@ -50,23 +55,18 @@
     justify-content: left;
     text-align: left;
     align-items: flex-start;
-    margin: 15px;
+    margin: 5px;
 }
 
 .herbaFooter{
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .descriptionFooter{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-}
-
-.footerTolyContainer3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    margin: 5px;
 }
 
 .footerTolyCard3{
@@ -79,8 +79,8 @@
 
 .footerTolyContainer4{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr 6fr;
-    margin: 15px;
+    grid-template-columns: 2fr 1.5fr 1.5fr 2fr 5fr;
+    margin: 9px;
 }
 
 .footerTolyCard4{
@@ -92,11 +92,19 @@
 }
 
 .redesFooterToly{
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
 }
 
 .ultimateFooterLyr{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 5px;
+}
+
+
+.toly-decoration-a {
+    text-decoration: none;
+    color: black;
 }

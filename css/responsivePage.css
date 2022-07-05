@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 1001px) {
+
+}
+
+@media screen and (max-width: 972px) {
+    .footerTolyContainer1{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-gap: 10px; 
+    }
+    .pictureTolyFooter{
+        width: 250px;
+        height: 125px;;
+    }
+    
+}
+
+@media screen and (max-width: 896px) {
+    .encabezadoFooterToly{
+        font-size: 18px;
+    }
+    .subFooterToly{
+        font-size: 14px;
+    }
+}   
