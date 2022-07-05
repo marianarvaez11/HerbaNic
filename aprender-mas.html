@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/brand/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="img/bootstrap icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/aprender-mas.css">
     <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="css/typography.css">
+
+    <link rel="stylesheet" href="css/style-aprender.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/responsivePage.css">
+
     <script src="js/overlay.js"></script>
 
     <!-- Fuente De Google Fonts -->
@@ -38,6 +43,7 @@
 </head>
 
 <body id="inicio-aprender-mas">
+
 
     <div id="overlay" onclick="overlay_off()"></div>
     <div id="inicio-sesion">
@@ -97,7 +103,7 @@
                 </ul>
                 <div style="width: fit-content;" class="search-div">
                     <input type="search" name="search" class="body-1
-                            on-background outline surface" id="search-bar" placeholder="Buscar">
+                        on-background outline surface" id="search-bar" placeholder="Buscar">
                 </div>
                 <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
                     <div style="display: inline-block;" class="user"></div>
@@ -116,79 +122,289 @@
             <a href="sobre-nosotros.html#inicio-sobre-nosotros" class="body-1 on-background">Sobre nosotros</a>
         </nav>
 
-        <div class="MainImageBackGround ParentAppContainer" id="parentApp">
-            <div class="contenedor-principal">
-                <div class="contenedor-imagen-principal">
-                    <h1 class="titulo1">Conoce el origen</h1>
-                    <h6 class="titulo6">Para tus necesidades de bienestar, comprende el perfil completo de cada
-                        planta.</h6>
-                </div>
-                <div class="contenedor-plantas-populares">
-                    <h3 class="titulo3">Plantas populares</h3>
 
-                    <div class="contenedor-tarjetas">
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/turmeric.jpg" alt="">
-                            <p class="texto-imagen">Turmeric</p>
-                        </a>
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/black-elderberry.jpg" alt="">
-                            <p class="texto-imagen">Black Elderberry</p>
-                        </a>
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/holy-basil.jpg" alt="">
-                            <p class="texto-imagen">Holy Basil</p>
-                        </a>
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/kava.jpg" alt="">
-                            <p class="texto-imagen">Kava</p>
-                        </a>
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/oregano.jpg" alt="">
-                            <p class="texto-imagen">Oregano</p>
-                        </a>
-                        <a href="#" class="tarjeta">
-                            <img class="imagen" src="img/herbs-images/burdock.jpg" alt="">
-                            <p class="texto-imagen">Burdock</p>
-                        </a>
+        <!--<div class="MainImageBackGround ParentAppContainer" id="parentApp"></div>-->
+
+        <!-- Inicio BackGround Main -->
+        <div id="backgroundTp1"></div>
+        <div id="backgroundToly1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="TextMainBackground2 CentroToly">
+                        <h1><span id="" class="lyricTolyOrigen">Conoce el origen</span></h1>
+                        <h3><span class="lyricToly">Para tus necesidades de bienestar, comprende el perfil completo
+                                de cada planta.</span></h3>
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- Fin BackGround Main -->
 
-        <div class="container-fluid Footer">
+        <!-- Inicio Padecimientos Frecuentes Main -->
+        <div class="container-fluid padeFreqMain newChild">
             <div class="row">
-                <div class="col col-lg-4">
-                    <div class="col-lg-10 offset-lg-1">
-                        <img src="img/LogoFooter.png" alt="" width="100%">
-                    </div>
-                </div>
-                <div class="col col-lg-6 offset-lg-1">
-                    <div class="row RowFooterInfo">
-                        <div class="col col-lg-3 footerColumnInfo">
-                            <h2>Acerca De</h2>
-                            <h4><a href="">Nosotros</a></h4>
-                            <h4><a href="">Clínica</a></h4>
-                            <h4><a href="">Tratamientos</a></h4>
-                        </div>
-                        <div class="col col-lg-5 offset-lg-1 footerColumnInfo">
-                            <h2>Ayuda y Contacto</h2>
-                            <h4><a href="">Centro de Ayuda</a></h4>
-                            <h4><a href="">Información de Seguridad</a></h4>
-                            <h4><i class="bi bi-envelope"></i><a
-                                    href="mailto:info.herbanic@gmail.com">info.herbanic@gmail.com</a> </h4>
-                            <h4><i class="bi bi-telephone"></i><a href="tel:+50557976465"> +505 2222 7777</a></h4>
-                        </div>
-                        <div class="col col-lg-3 footerColumnInfo">
-                            <h2>Comunidad</h2>
-                            <h4><a href="avisos.html">Avisos</a></h4>
-                            <h4><a href="">Donaciones</a></h4>
-                        </div>
-                    </div>
+                <div class="col col-lg">
+                    <h3 class="tituloParent">Plantas Populares</h3>
                 </div>
             </div>
         </div>
+
+        <div class="divisionToly">
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Turmeric.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Turmeric</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Black Eldelberry.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Black Eldelberry</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Holy basil.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Hoky Basil</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Kava.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Kava</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Oregaano.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Orégano</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Burdock.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Burdock</h2>
+            </div>
+
+        </div>
+
+        <div class="divisionTodas">
+            <div class="divisionTodasCard">
+                <div><label class="lyrT">Todas las plantas e ingredientes</label></div>
+                <label class="lyrT3">Explore seleccionando una planta de su interés</label>
+            </div>
+        </div>
+
+        <div class="encabezadoLista">
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">Todo</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">A</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">B</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">C</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">D</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">E</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">F</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">G</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">H</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">I</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">J</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">K</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">L</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">M</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">N</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">Ñ</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">O</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">P</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">Q</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">R</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">S</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">T</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">U</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">V</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">W</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">X</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">Y</label></div>
+            <div class="encabezadoListaCard"><label class="encabezadoLyric">Z</label></div>
+        </div>
+
+        <div class="divisionToly">
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Acacia.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Acacia</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Acai.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Acai</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Acerola.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Acerola</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Agave.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Agave</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Alcachofa.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Alcachofa</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Alfalfa.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Alfalfa</h2>
+            </div>
+
+
+            <!--Insert more-->
+
+
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Aloe.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Aloe</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Amla.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Amla</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Anís.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Anis</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Arjuna.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Arjuna</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Ashwagandha.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Ashwagandha</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Bacopa.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Bacopa</h2>
+            </div>
+
+
+            <!--Insert more-->
+
+
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Boswellia.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Boswellia</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Caléndula.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Caréndula</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Cardamom.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Cardamom</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Chaga.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Chaga</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Chía.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Chía</h2>
+            </div>
+            <div class="divisionTolyCard">
+                <img src="img/aprender/Clove.png" alt="" class="pictureToly">
+                <h2 class="titleTolyA">Clove</h2>
+            </div>
+        </div>
+
+        <div class="flechaToly">
+            <div class="flechaTolyCard1">
+                <img src="img/aprender/left.png" alt="" class="pictureTolyFlecha">
+            </div>
+            <div class="flechaTolyCard2">
+                <img src="img/aprender/right.png" alt="" class="pictureTolyFlecha">
+            </div>
+        </div>
+
+        <!-- AQUI TERMINA SU CODIGO POR FAVOR NO MODIFICAR NADA DEBAJO -->
+        <footer style="margin-top: 40px;">
+            <div class="footTeamTo">
+                <div class="footerTolyContainer1">
+                    <div class="footerTolyCard1">
+                        <img src="img/Footer/FootLogo2.png" alt="" class="pictureTolyFooter">
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Acerca de</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Nosotros</label>
+                            <br>
+                            <label class="subFooterToly">Clinicas</label>
+                            <br>
+                            <label class="subFooterToly">Tratamientos</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Ayuda y Contacto</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Centro de Ayuda</label>
+                            <br>
+                            <label class="subFooterToly">Infotmacion de Seguridad</label>
+                            <br>
+                            <label class="subFooterToly"><a href="mailto:info.herbanic@gmail.com"
+                                    class="toly-decoration-a">info.herbanic@gmail.com</a> </label>
+                            <br>
+                            <div>
+                                <img src="img/Footer/Phone.png" alt="" class="phoneToly">
+                                <label class="subFooterToly"><a href="tel:+50557976465" class="toly-decoration-a"> +505
+                                        2222 7777</a></label>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Comunidad</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Avisos</label>
+                            <br>
+                            <label class="subFooterToly">Donaciones</label>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!---->
+
+                <div class="footerTolyContainer2">
+                    <div class="footerTolyCard2">
+                        <label class="herbaFooter">HERBANIC</label>
+                        <label class="descriptionFooter">Managua, Nicaragua</label>
+                        <label class="descriptionFooter">HerbaNic, 2022. ©Todos los derechos reservados</label>
+                    </div>
+                </div>
+
+
+                <!---->
+
+                <div class="footerTolyContainer4">
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Terminos y condiciones</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Privacidad</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Aviso Legal</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Política de devoluciones</label>
+                    </div>
+                    <div class="footerTolyCard3">
+                        <div>
+                            <a href="https://wa.me/50576549074" target="_blank"><img src="img/Footer/WhatsApp.png"
+                                    alt="" class="redesFooterToly"></a>
+
+                            <a href="https://es-la.facebook.com/NutricionSaludable.Revista" target="_blank"><img
+                                    src="img/Footer/Facebook.png" alt="" class="redesFooterToly"></a>
+
+                            <a href="https://www.youtube.com/c/MedicinatvNutricion" target="_blank"><img
+                                    src="img/Footer/YouTube.png" alt="" class="redesFooterToly"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </footer>
     </div>
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
@@ -202,9 +418,9 @@
         let header2 = document.getElementsByClassName('SubHeader')[0];
         let header2Height = window.getComputedStyle(header2, null).height;
         header2.style.marginTop = header1Height;
-    // const parentMarginTop = `${header1Height.split('px')[0] + header2Height.split('px')[0]}px`;
-    // console.log(parentMarginTop);
-    // document.getElementById('parentApp').style.marginTop = header1Height + header2Height;
+        // const parentMarginTop = `${header1Height.split('px')[0] + header2Height.split('px')[0]}px`;
+        // console.log(parentMarginTop);
+        // document.getElementById('parentApp').style.marginTop = header1Height + header2Height;
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/setHeader2MarginTop.js"></script>
