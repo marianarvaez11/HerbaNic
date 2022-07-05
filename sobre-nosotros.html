@@ -1,376 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/brand/favicon.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/brand/favicon.png"
+            type="image/x-icon">
 
-    <!-- css styles -->
+        <!-- css styles -->
 
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/typography.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
+        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="css/typography.css">
 
-    <link rel="stylesheet" href="css/style-aprender.css">
-    <link rel="stylesheet" href="css/Footer.css">
-    <link rel="stylesheet" href="css/responsivePage.css">
+        <link rel="stylesheet" href="css/style-aprender.css">
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/responsivePage.css">
 
-    <script src="js/overlay.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/setHeader2MarginTop.js"></script>
+        <script src="js/overlay.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/setHeader2MarginTop.js"></script>
 
-    <!-- google icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- google icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
 
-    <!-- Bootstrap CSS  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!--  -->
+        <!-- Bootstrap CSS  -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous">
+        <!--  -->
 
-    <title>HerbaNic</title>
-</head>
+        <title>HerbaNic</title>
+    </head>
 
-<body>
-    <div id="overlay" onclick="overlay_off()"></div>
-    <div id="inicio-sesion">
-        <button onclick="overlay_off()" class="borderless-transparent close"></button>
-        <div class="flex-column-center">
-            <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
-            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a onclick="change('inicio-sesion')"
-                    href="#">Regístrate</a></p>
-            <form class="flex-column-center" action="">
-                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
-                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
-                <button class="button secondary-color">Continuar</button>
-            </form>
-            <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste tu contraseña?</a>
-        </div>
-    </div>
-
-    <div id="registro">
-        <button onclick="overlay_off()" class="borderless-transparent close"></button>
-        <div class="flex-column-center">
-            <div style="gap: 8px" class="flex-row-center headline-5 text-align-center">Te damos la bienvenida a
-                <div class="logo"></div>
+    <body>
+        <div id="overlay" onclick="overlay_off()"></div>
+        <div id="inicio-sesion">
+            <button onclick="overlay_off()" class="borderless-transparent
+                close"></button>
+            <div class="flex-column-center">
+                <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
+                <p class="subhead-1 text-align-center">¿Aún no tienes una
+                    cuenta? <a onclick="change('inicio-sesion')"
+                        href="#">Regístrate</a></p>
+                <form class="flex-column-center" action="">
+                    <input type="email" class="body-1" name="" id=""
+                        placeholder="Correo electrónico">
+                    <input type="password" class="body-1" name="" id=""
+                        placeholder="Contraseña">
+                    <button class="button secondary-color">Continuar</button>
+                </form>
+                <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste
+                    tu contraseña?</a>
             </div>
-            <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
-            <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a onclick="change('registro')"
-                    href="#">Inicia sesión</a></p>
-            <form class="flex-column-center" action="">
-                <input type="text" class="body-1" name="" id="" placeholder="Nombre">
-                <input type="text" class="body-1" name="" id="" placeholder="Apellido">
-                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
-                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
-                <button class="button secondary-color">Crear cuenta</button>
-            </form>
         </div>
-    </div>
 
-    <header id="header" class="HeaderPrincipal">
-        <a href="index.html">
-            <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
-        </a>
-        <div class="container-ht content-center gap-16">
-            <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
-                <li class="nav-item dropdown button text-button-icon on-background">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Categoría
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
-                        <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
-                        <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
-                        <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div style="width: fit-content;" class="search-div">
-                <input type="search" name="search" class="body-1
-                    on-background outline surface" id="search-bar" placeholder="Buscar">
+        <div id="registro">
+            <button onclick="overlay_off()" class="borderless-transparent
+                close"></button>
+            <div class="flex-column-center">
+                <div style="gap: 8px" class="flex-row-center headline-5
+                    text-align-center">Te damos la bienvenida a
+                    <div class="logo"></div>
+                </div>
+                <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
+                <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a
+                        onclick="change('registro')"
+                        href="#">Inicia sesión</a></p>
+                <form class="flex-column-center" action="">
+                    <input type="text" class="body-1" name="" id=""
+                        placeholder="Nombre">
+                    <input type="text" class="body-1" name="" id=""
+                        placeholder="Apellido">
+                    <input type="email" class="body-1" name="" id=""
+                        placeholder="Correo electrónico">
+                    <input type="password" class="body-1" name="" id=""
+                        placeholder="Contraseña">
+                    <button class="button secondary-color">Crear cuenta</button>
+                </form>
             </div>
-            <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
-                <div style="display: inline-block;" class="user"></div>
-                Iniciar sesión
+        </div>
+
+        <header id="header" class="HeaderPrincipal">
+            <a href="index.html">
+                <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
             </a>
-            <a href="./carrito.html" class="button on-background icon-button">
-                <div style="display: inline-block;" class="cart"></div>
-            </a>
-        </div>
-    </header>
-
-    <nav id="nav-bar" class="surface">
-        <a href="index.html" class="body-1 on-background">Inicio</a>
-        <span class="material-icons md-24 on-background">
-            chevron_right
-        </span>
-        <a href="sobre-nosotros.html" class="body-1 on-background">Sobre nosostros</a>
-    </nav>
-
-    <main class="container-vt pd-24 gap-72">
-        <div class="container-ht content-center gap-24">
-            <div class="container-vt gap-12">
-                <span class="overline primary-color">Información</span>
-                <h3 class="headline-3 on-background">¿Qué es <span class="primary-color">HerbaNic?</span></h3>
-                <p class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el
-                    uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.
-                </p>
-            </div>
-            <div style="background-image: url(img/arbol-brisa.jpg);" class="container-img full-width br-all-24">
-
-            </div>
-        </div>
-
-        <div class="container-ht grid grid-columns-2 content-center gap-24 pd-24 surface br-all-24">
-            <div style="background-image: url(img/plantas.jpg);" class="container-img br-all-24">
-
-            </div>
-            <div id="business-information" class="container-vt full-width gap-12">
-                <div class="container-ht gap-12">
-                    <button onclick="activateText('mision')" id="btn-mision" class="button text-button primary-color">Misión</button>
-                    <button onclick="activateText('vision')" id="btn-vision" class="button text-button primary-color">Visión</button>
-                    <button onclick="activateText('valores')" id="btn-values" class="button text-button primary-color">Valores</button>
+            <div class="container-ht content-center gap-16">
+                <ul class="navbar-nav col-lg-2 button text-button-icon
+                    on-background">
+                    <li class="nav-item dropdown button text-button-icon
+                        on-background">
+                        <a class="nav-link dropdown-toggle" href="#"
+                            id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoría
+                        </a>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="Products.html#estresContainer">Estrés</a></li>
+                            <li><a class="dropdown-item"
+                                    href="Products.html#indigContainer">Indigestión</a></li>
+                            <li><a class="dropdown-item"
+                                    href="Products.html#insomContainer">Insomnio</a></li>
+                            <li><a class="dropdown-item" href="Products.html">Control
+                                    de Peso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="width: fit-content;" class="search-div">
+                    <input type="search" name="search" class="body-1
+                        on-background outline surface" id="search-bar"
+                        placeholder="Buscar">
                 </div>
-                <h3 class="headline-3 on-background">Nuestra misión</h3>
-                <p id="mision-text" class="body-1 on-background">HerbaNic es una tienda de medicina natural, enfocada directamente en el uso de elementos encontrados en la naturaleza, con el fin de cuidar la salud de nuestros pacientes.
-                </p>
-
-                <p style="display: none;" id="vision-text" class="body-1 on-background">Convertirnos en la clínica número uno en el país, brinando los mejores servicios para nuestros clientes.
-                </p>
-
-                <p style="display: none;" id="values-text" class="body-1 on-background">Liderazgo, colaboración, integridad, responsabilidad, pasión, diversidad, innovación y calidad. 
-                </p>
+                <a onclick="overlay_on('inicio-sesion');" href="#"
+                    class="text-button-icon button on-background">
+                    <div style="display: inline-block;" class="user"></div>
+                    Iniciar sesión
+                </a>
+                <a href="./carrito.html" class="button on-background
+                    icon-button">
+                    <div style="display: inline-block;" class="cart"></div>
+                </a>
             </div>
-        </div>
+        </header>
 
-        <div class="container-vt gap-48">
-            <div class="container-vt gap-12">
-                <span class="overline on-background">Comunidad</span>
-                <h3 class="headline-3 on-background">Nuestro<span class="primary-color"> compromiso</span> con el
-                    cliente
-                </h3>
-            </div>
+        <nav id="nav-bar" class="surface">
+            <a href="./index.html" class="body-1 on-background">Inicio</a>
+            <a href="./Products.html" class="body-1 on-background">Tienda</a>
+            <a href="./aprender-mas.html" class="body-1 on-background">Aprender</a>
+            <a href="./sobre-nosotros.html" class="body-1 on-background">Sobre
+                nosotros</a>
+        </nav>
 
-            <div class="container-ht gap-24 wth-full">
-                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                    <div class="container-ht gap-12 on-background">
-                        <span class="material-icons">
-                            compost
-                        </span>
-                        <h5 class="headline-5">Producto</h5>
-                    </div>
-                    <p class="body-2">Nuestro principal objetivo es ofrecer una alternativa 100% natural para el consumo
-                        de medicinas.</p>
-                </div>
-
-                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                    <div class="container-ht gap-12 on-background">
-                        <span class="material-icons">
-                            attach_money
-                        </span>
-                        <h5 class="headline-5">Precio</h5>
-                    </div>
-                    <p class="body-2">No solo ofrecemos una alternativa 100% natural, sino que también precios.</p>
-                </div>
-
-                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                    <div class="container-ht gap-12 on-background">
-                        <span class="material-icons">
-                            recycling
-                        </span>
-                        <h5 class="headline-5">Calidad</h5>
-                    </div>
-                    <p class="body-2">La calidad de nuestros productos está muy por encima de la competencia, ya que es
-                        nuestra responsabilidad.</p>
-                </div>
-
-                <div class="container-vt gap-12 pd-24 on-background br-all-12 outline">
-                    <div class="container-ht gap-12 on-background">
-                        <span class="material-icons">
-                            two_wheeler
-                        </span>
-                        <h5 class="headline-5">Distribución</h5>
-                    </div>
-                    <p class="body-2">Tenemos como objetivo mantener presente nuestros productos, brindando servicios de
-                        entrega.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-vt gap-48">
-            <div class="container-vt gap-12">
-                <span class="overline on-background">Comunidad</span>
-                <h3 class="headline-3 on-background"><span class="primary-color">Testimonios</span> de pacientes</h3>
-            </div>
-            <div class="container-ht wth-full pd-48 gap-24 background-dark br-all-24">
+        <main class="container-vt pd-24 gap-72">
+            <div class="container-ht content-center gap-24">
                 <div class="container-vt gap-12">
+                    <span class="overline primary-color">Información</span>
+                    <h3 class="headline-3 on-background">¿Qué es <span
+                            class="primary-color">HerbaNic?</span></h3>
+                    <p class="body-1 on-background">HerbaNic es una tienda de
+                        medicina natural, enfocada directamente en el
+                        uso de elementos encontrados en la naturaleza, con el
+                        fin de cuidar la salud de nuestros pacientes.
+                    </p>
+                </div>
+                <div style="background-image: url(img/arbol-brisa.jpg);"
+                    class="container-img full-width br-all-24">
+
+                </div>
+            </div>
+
+            <div class="container-ht grid grid-columns-2 content-center gap-24
+                pd-24 surface br-all-24">
+                <div style="background-image: url(img/plantas.jpg);"
+                    class="container-img br-all-24">
+
+                </div>
+                <div id="business-information" class="container-vt full-width
+                    gap-12">
                     <div class="container-ht gap-12">
-                        <button id="back-comments" onclick="changeTextMessageBack();" class="material-icons outline-icon-button on-background-dark">
-                            chevron_left
-                        </button>
-                        <button id="next-comments" onclick="changeTextMessageNext();" class="material-icons outline-icon-button on-background-dark">
-                            chevron_right
-                        </button>
+                        <button onclick="activateText('mision')" id="btn-mision"
+                            class="button text-button primary-color">Misión</button>
+                        <button onclick="activateText('vision')" id="btn-vision"
+                            class="button text-button primary-color">Visión</button>
+                        <button onclick="activateText('valores')"
+                            id="btn-values" class="button text-button
+                            primary-color">Valores</button>
                     </div>
-                    <!-- 1 -->
-                    <p id="text-message-1" class="body-1 on-background-dark">“Estoy muy contento con el servicio y los productos de
-                        HerbaNic, no solo es una publicidad, sino que es veraz la calidad que ellos ofrecen.”</p>
+                    <h3 class="headline-3 on-background">Nuestra misión</h3>
+                    <p id="mision-text" class="body-1 on-background">HerbaNic es
+                        una tienda de medicina natural, enfocada directamente en
+                        el uso de elementos encontrados en la naturaleza, con el
+                        fin de cuidar la salud de nuestros pacientes.
+                    </p>
 
-                    <!-- 2 -->
-                    <p style="display: none;" id="text-message-2" class="body-1 on-background-dark">“Me preguntan si debería recomendar a HerbaNic, a los que respondo: 'pruébalo tú mismo'. Sus servicios son excelentes.”</p>
+                    <p style="display: none;" id="vision-text" class="body-1
+                        on-background">Convertirnos en la clínica número uno en
+                        el país, brinando los mejores servicios para nuestros
+                        clientes.
+                    </p>
 
-                    <!-- 3 -->
-                    <p style="display: none;" id="text-message-3" class="body-1 on-background-dark">“Cuando mi salud se vió afectada, de pronto emepcé a buscar soluciones, pero las soluciones me encontraro a mí con HerbaNic.”</p>
+                    <p style="display: none;" id="values-text" class="body-1
+                        on-background">Liderazgo, colaboración, integridad,
+                        responsabilidad, pasión, diversidad, innovación y
+                        calidad.
+                    </p>
+                </div>
+            </div>
 
-                    <div class="container-ht gap-12">
-                        <img class="img-perfil" src="img/person.png" alt="Persona">
-                        <div class="container-vt">
-                            <!-- 1 -->
-                            <a href="#" id="person-1" class="button on-background-dark">Joseph Martínez</a>
-
-                            <!-- 2 -->
-                            <a style="display: none;" id="person-2" href="#" class="button on-background-dark">Andrés Gómez</a>
-
-                            <!-- 3 -->
-                            <a style="display: none;" id="person-3" href="#" class="button on-background-dark">Alicia López</a>
-
-                            <span class="caption on-background-dark">Paciente</span>
-                        </div>
-                    </div>
+            <div class="container-vt gap-48">
+                <div class="container-vt gap-12">
+                    <span class="overline on-background">Comunidad</span>
+                    <h3 class="headline-3 on-background">Nuestro<span
+                            class="primary-color"> compromiso</span> con el
+                        cliente
+                    </h3>
                 </div>
 
-                <div class="container-vt gap-24">
-                    <div class="container-ht gap-24 wth-full">
-                        <div class="container-vt">
-                            <h3 class="headline-3 on-background-dark">450+</h3>
-                            <p class="subhead-1 on-background-dark">Productos disponibles</p>
+                <div class="container-ht gap-24 wth-full">
+                    <div class="container-vt gap-12 pd-24 on-background
+                        br-all-12 outline">
+                        <div class="container-ht gap-12 on-background">
+                            <span class="material-icons">
+                                compost
+                            </span>
+                            <h5 class="headline-5">Producto</h5>
                         </div>
-                        <div class="container-vt">
-                            <h3 class="headline-3 on-background-dark">4.5k</h3>
-                            <p class="subhead-1 on-background-dark">Comunidad HerbaNic</p>
+                        <p class="body-2">Nuestro principal objetivo es ofrecer
+                            una alternativa 100% natural para el consumo
+                            de medicinas.</p>
+                    </div>
+
+                    <div class="container-vt gap-12 pd-24 on-background
+                        br-all-12 outline">
+                        <div class="container-ht gap-12 on-background">
+                            <span class="material-icons">
+                                attach_money
+                            </span>
+                            <h5 class="headline-5">Precio</h5>
+                        </div>
+                        <p class="body-2">No solo ofrecemos una alternativa 100%
+                            natural, sino que también precios.</p>
+                    </div>
+
+                    <div class="container-vt gap-12 pd-24 on-background
+                        br-all-12 outline">
+                        <div class="container-ht gap-12 on-background">
+                            <span class="material-icons">
+                                recycling
+                            </span>
+                            <h5 class="headline-5">Calidad</h5>
+                        </div>
+                        <p class="body-2">La calidad de nuestros productos está
+                            muy por encima de la competencia, ya que es
+                            nuestra responsabilidad.</p>
+                    </div>
+
+                    <div class="container-vt gap-12 pd-24 on-background
+                        br-all-12 outline">
+                        <div class="container-ht gap-12 on-background">
+                            <span class="material-icons">
+                                two_wheeler
+                            </span>
+                            <h5 class="headline-5">Distribución</h5>
+                        </div>
+                        <p class="body-2">Tenemos como objetivo mantener
+                            presente nuestros productos, brindando servicios de
+                            entrega.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-vt gap-48">
+                <div class="container-vt gap-12">
+                    <span class="overline on-background">Comunidad</span>
+                    <h3 class="headline-3 on-background"><span
+                            class="primary-color">Testimonios</span> de
+                        pacientes</h3>
+                </div>
+                <div class="container-ht wth-full pd-48 gap-24 background-dark
+                    br-all-24">
+                    <div class="container-vt gap-12">
+                        <div class="container-ht gap-12">
+                            <button id="back-comments"
+                                onclick="changeTextMessageBack();"
+                                class="material-icons outline-icon-button
+                                on-background-dark">
+                                chevron_left
+                            </button>
+                            <button id="next-comments"
+                                onclick="changeTextMessageNext();"
+                                class="material-icons outline-icon-button
+                                on-background-dark">
+                                chevron_right
+                            </button>
+                        </div>
+                        <!-- 1 -->
+                        <p id="text-message-1" class="body-1
+                            on-background-dark">“Estoy muy contento con el
+                            servicio y los productos de
+                            HerbaNic, no solo es una publicidad, sino que es
+                            veraz la calidad que ellos ofrecen.”</p>
+
+                        <!-- 2 -->
+                        <p style="display: none;" id="text-message-2"
+                            class="body-1 on-background-dark">“Me preguntan si
+                            debería recomendar a HerbaNic, a los que respondo:
+                            'pruébalo tú mismo'. Sus servicios son excelentes.”</p>
+                        <!-- 3 -->
+                        <p style="display: none;" id="text-message-3"
+                            class="body-1 on-background-dark">“Cuando mi salud
+                            se vió afectada, de pronto emepcé a buscar
+                            soluciones, pero las soluciones me encontraro a mí
+                            con HerbaNic.”</p>
+
+                        <div class="container-ht gap-12">
+                            <img class="img-perfil" src="img/person.png"
+                                alt="Persona">
+                            <div class="container-vt">
+                                <!-- 1 -->
+                                <a href="#" id="person-1" class="button
+                                    on-background-dark">Joseph Martínez</a>
+
+                                <!-- 2 -->
+                                <a style="display: none;" id="person-2" href="#"
+                                    class="button on-background-dark">Andrés
+                                    Gómez</a>
+
+                                <!-- 3 -->
+                                <a style="display: none;" id="person-3" href="#"
+                                    class="button on-background-dark">Alicia
+                                    López</a>
+
+                                <span class="caption on-background-dark">Paciente</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="container-ht gap-24 wth-full">
-                        <div class="container-vt">
-                            <h3 class="headline-3 on-background-dark">150+</h3>
-                            <p class="subhead-1 on-background-dark">Contribuyentes al proyecto</p>
+                    <div class="container-vt gap-24">
+                        <div class="container-ht gap-24 wth-full">
+                            <div class="container-vt">
+                                <h3 class="headline-3 on-background-dark">450+</h3>
+                                <p class="subhead-1 on-background-dark">Productos
+                                    disponibles</p>
+                            </div>
+                            <div class="container-vt">
+                                <h3 class="headline-3 on-background-dark">4.5k</h3>
+                                <p class="subhead-1 on-background-dark">Comunidad
+                                    HerbaNic</p>
+                            </div>
                         </div>
-                        <div class="container-vt">
-                            <h3 class="headline-3 on-background-dark">44+</h3>
-                            <p class="subhead-1 on-background-dark">Laboratorios en el país</p>
+
+                        <div class="container-ht gap-24 wth-full">
+                            <div class="container-vt">
+                                <h3 class="headline-3 on-background-dark">150+</h3>
+                                <p class="subhead-1 on-background-dark">Contribuyentes
+                                    al proyecto</p>
+                            </div>
+                            <div class="container-vt">
+                                <h3 class="headline-3 on-background-dark">44+</h3>
+                                <p class="subhead-1 on-background-dark">Laboratorios
+                                    en el país</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footTeamTo">
-            <div class="footerTolyContainer1">
-                <div class="footerTolyCard1">
-                    <img src="img/Footer/FootLogo2.png" alt="" class="pictureTolyFooter">
-                </div>
-                <div class="footerTolyCard1">
-                    <div>
-                        <label class="encabezadoFooterToly">Acerca de</label>
+        </main>
+        <footer>
+            <div class="footTeamTo">
+                <div class="footerTolyContainer1">
+                    <div class="footerTolyCard1">
+                        <img src="img/Footer/FootLogo2.png" alt=""
+                            class="pictureTolyFooter">
                     </div>
-                    <div>
-                        <label class="subFooterToly">Nosotros</label>
-                        <br>
-                        <label class="subFooterToly">Clinicas</label>
-                        <br>
-                        <label class="subFooterToly">Tratamientos</label>
-                        <br>
-                    </div>
-                </div>
-                <div class="footerTolyCard1">
-                    <div>
-                        <label class="encabezadoFooterToly">Ayuda y Contacto</label>
-                    </div>
-                    <div>
-                        <label class="subFooterToly">Centro de Ayuda</label>
-                        <br>
-                        <label class="subFooterToly">Infotmacion de Seguridad</label>
-                        <br>
-                        <label class="subFooterToly"><a href="mailto:info.herbanic@gmail.com"
-                                class="toly-decoration-a">info.herbanic@gmail.com</a> </label>
-                        <br>
+                    <div class="footerTolyCard1">
                         <div>
-                            <img src="img/Footer/Phone.png" alt="" class="phoneToly">
-                            <label class="subFooterToly"><a href="tel:+50557976465" class="toly-decoration-a"> +505
-                                    2222 7777</a></label>
+                            <label class="encabezadoFooterToly">Acerca de</label>
                         </div>
-                        <br>
+                        <div>
+                            <label class="subFooterToly">Nosotros</label>
+                            <br>
+                            <label class="subFooterToly">Clinicas</label>
+                            <br>
+                            <label class="subFooterToly">Tratamientos</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Ayuda y Contacto</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Centro de Ayuda</label>
+                            <br>
+                            <label class="subFooterToly">Infotmacion de
+                                Seguridad</label>
+                            <br>
+                            <label class="subFooterToly"><a
+                                    href="mailto:info.herbanic@gmail.com"
+                                    class="toly-decoration-a">info.herbanic@gmail.com</a>
+                            </label>
+                            <br>
+                            <div>
+                                <img src="img/Footer/Phone.png" alt=""
+                                    class="phoneToly">
+                                <label class="subFooterToly"><a
+                                        href="tel:+50557976465"
+                                        class="toly-decoration-a"> +505
+                                        2222 7777</a></label>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Comunidad</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Avisos</label>
+                            <br>
+                            <label class="subFooterToly">Donaciones</label>
+                            <br>
+                        </div>
                     </div>
                 </div>
-                <div class="footerTolyCard1">
-                    <div>
-                        <label class="encabezadoFooterToly">Comunidad</label>
-                    </div>
-                    <div>
-                        <label class="subFooterToly">Avisos</label>
-                        <br>
-                        <label class="subFooterToly">Donaciones</label>
-                        <br>
+
+
+                <!---->
+
+                <div class="footerTolyContainer2">
+                    <div class="footerTolyCard2">
+                        <label class="herbaFooter">HERBANIC</label>
+                        <label class="descriptionFooter">Managua, Nicaragua</label>
+                        <label class="descriptionFooter">HerbaNic, 2022. ©Todos
+                            los derechos reservados</label>
                     </div>
                 </div>
+
+
+                <!---->
+
+                <div class="footerTolyContainer4">
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Terminos y condiciones</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Privacidad</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Aviso Legal</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Política de
+                            devoluciones</label>
+                    </div>
+                    <div class="footerTolyCard3">
+                        <div>
+                            <a href="https://wa.me/50576549074" target="_blank"><img
+                                    src="img/Footer/WhatsApp.png" alt=""
+                                    class="redesFooterToly"></a>
+
+                            <a
+                                href="https://es-la.facebook.com/NutricionSaludable.Revista"
+                                target="_blank"><img
+                                    src="img/Footer/Facebook.png" alt=""
+                                    class="redesFooterToly"></a>
+
+                            <a
+                                href="https://www.youtube.com/c/MedicinatvNutricion"
+                                target="_blank"><img
+                                    src="img/Footer/YouTube.png" alt=""
+                                    class="redesFooterToly"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
             </div>
-
-
-            <!---->
-
-            <div class="footerTolyContainer2">
-                <div class="footerTolyCard2">
-                    <label class="herbaFooter">HERBANIC</label>
-                    <label class="descriptionFooter">Managua, Nicaragua</label>
-                    <label class="descriptionFooter">HerbaNic, 2022. ©Todos los derechos reservados</label>
-                </div>
-            </div>
-
-
-            <!---->
-
-            <div class="footerTolyContainer4">
-                <div class="footerTolyCard4">
-                    <label class="ultimateFooterLyr">Terminos y condiciones</label>
-                </div>
-                <div class="footerTolyCard4">
-                    <label class="ultimateFooterLyr">Privacidad</label>
-                </div>
-                <div class="footerTolyCard4">
-                    <label class="ultimateFooterLyr">Aviso Legal</label>
-                </div>
-                <div class="footerTolyCard4">
-                    <label class="ultimateFooterLyr">Política de devoluciones</label>
-                </div>
-                <div class="footerTolyCard3">
-                    <div>
-                        <a href="https://wa.me/50576549074" target="_blank"><img src="img/Footer/WhatsApp.png" alt=""
-                                class="redesFooterToly"></a>
-
-                        <a href="https://es-la.facebook.com/NutricionSaludable.Revista" target="_blank"><img
-                                src="img/Footer/Facebook.png" alt="" class="redesFooterToly"></a>
-
-                        <a href="https://www.youtube.com/c/MedicinatvNutricion" target="_blank"><img
-                                src="img/Footer/YouTube.png" alt="" class="redesFooterToly"></a>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-    </footer>
-    <!-- Bootstrap JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </footer>
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous">
         </script>
-    
-    <script src="./js/main.js"></script>
-</body>
+
+        <script src="./js/main.js"></script>
+    </body>
 
 </html>
