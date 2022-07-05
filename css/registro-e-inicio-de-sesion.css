@@ -126,6 +126,20 @@
     justify-content: center;
 }
 
+.flex-column-left{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.flex-row-left{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: left;
+}
+
 .text-align-center{
     text-align: center;
 }

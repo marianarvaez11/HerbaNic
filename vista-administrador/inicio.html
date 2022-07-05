@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/brand/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../img/bootstrap icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/registro-e-inicio-de-sesion.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/vista-administrador.css">
+    <script src="../js/overlay.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/setHeader2MarginTop.js"></script>
+
+    <!-- Fuente De Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Radio+Canada:wght@300&display=swap"
+        rel="stylesheet">
+    <!--  -->
+
+    <!-- Estilos Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--  -->
+
+    <!-- FAVOR NO MODIFICAR LA ETIQUETA LINK EXISTENTE, SI PUEDEN AGREGAR OTRAS ETIQUETAS MAS NO CAMBIAR ESA ETIQUETA LINK -->
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--  -->
+
+    <title>Herbanic | Inicio</title>
+</head>
+
+<body id="inicio-index">
+
+    <div style="height: 100%;" class="container-fluid MainView">
+
+        <header id="header" class="HeaderPrincipal">
+            <a href="index.html">
+                <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
+            </a>
+            <div class="container-ht content-center gap-16">
+                <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
+                    <li class="nav-item dropdown button text-button-icon on-background">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoría
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Pedidos</a></li>
+                            <li><a class="dropdown-item" href="#">Productos</a></li>
+                            <li><a class="dropdown-item" href="#">Clientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="width: fit-content;" class="search-div">
+                    <input type="search" name="search" class="body-1
+                            on-background outline surface" id="search-bar" placeholder="Buscar">
+                </div>
+                <a href="#" class="text-button-icon button on-background">
+                    <div style="display: inline-block;" class="icon admin"></div>
+                    Admin
+                </a>
+            </div>
+        </header>
+
+        <main id="admin">
+            <div class="flex-column-left">
+                <button class="borderless-transparent flex-row-left headline-6">
+                    <div class="icon home"></div>
+                    <a href="inicio.html">Inicio</a>
+                </button>
+                <button class="borderless-transparent flex-row-left headline-6">
+                    <div class="icon pedidos"></div>
+                    <a href="pedidos.html">Pedidos</a>
+                </button>
+                <button class="borderless-transparent flex-row-left headline-6">
+                    <div class="icon productos"></div>
+                    <a href="productos.html">Productos</a>
+                </button>
+                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
+                    <a href="productos.html">Todos los productos</a>
+                </button>
+                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
+                    <a href="inventario.html">Invetario</a>
+                </button>
+                <button class="borderless-transparent flex-row-left headline-6">
+                    <div class="icon clientes"></div>
+                    <a href="clientes.html">Clientes</a>
+                </button>
+            </div>
+            <div class="contenido">
+                <div class="datos">
+                    <h3 style="margin-bottom: 40px;" class="headline-3">Datos actuales del sitio</h3>
+                    <div class="flex-row-center">
+                        <div class="dato">
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Ventas totales</h4>
+                            <h5 class="headline-5">$ 400 en ventas</h5>
+                            <div class="line"></div>
+                            <h5 class="headline-5">4 pedidos</h5>
+                        </div>
+                        <div class="dato">
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Ventas totales</h4>
+                            <h5 class="headline-5">$ 400 en ventas</h5>
+                            <div class="line"></div>
+                            <h5 class="headline-5">4 pedidos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row-left"></div>
+            </div>
+        </main>
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+            </script>
+
+        <script>
+            let header1 = document.getElementsByClassName("HeaderPrincipal");
+            let header1Height = window.getComputedStyle(header1, null).height;
+            let header2 = document.getElementsByClassName('SubHeader')[0];
+            let header2Height = window.getComputedStyle(header2, null).height;
+            header2.style.marginTop = header1Height;
+    // const parentMarginTop = `${header1Height.split('px')[0] + header2Height.split('px')[0]}px`;
+    // console.log(parentMarginTop);
+    // document.getElementById('parentApp').style.marginTop = header1Height + header2Height;
+        </script>
+
+</body>
+
+</html>
