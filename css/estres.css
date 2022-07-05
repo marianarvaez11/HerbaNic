@@ -1,17 +1,17 @@
 /* Images Loading */
-#tabletaBrahmi {
+#cardImage1 {
     background-image: url('../img/card-images/ProductCards/tabletaBrahmi.png');
 }
 
-#capsulaImmune {
+#cardImage2 {
     background-image: url('../img/card-images/ProductCards/capsulaImmune.png');
 }
 
-#capsulaBreathAid {
+#cardImage3 {
     background-image: url('../img/card-images/ProductCards/capsulaBreathAid.png');
 }
 
-#capsulaSleepAid {
+#cardImage4 {
     background-image: url('../img/card-images/ProductCards/capsulaSleepAid.png');
 }
 

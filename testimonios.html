@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/brand/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="img/bootstrap icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="css/estres.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    <link rel="stylesheet" href="css/style-aprender.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/responsivePage.css">
+
+    <script src="js/overlay.js"></script>
+
+    <!-- Fuente De Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Radio+Canada:wght@300&display=swap"
+        rel="stylesheet">
+    <!--  -->
+
+    <!-- Estilos Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--  -->
+
+    <!-- FAVOR NO MODIFICAR LA ETIQUETA LINK EXISTENTE, SI PUEDEN AGREGAR OTRAS ETIQUETAS MAS NO CAMBIAR ESA ETIQUETA LINK -->
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--  -->
+
+    <title>Productos | Tienda</title>
+</head>
+
+<body id="inicio-products">
+    <div id="overlay" onclick="overlay_off()"></div>
+    <div id="inicio-sesion">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
+            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a onclick="change('inicio-sesion')"
+                    href="#">Regístrate</a></p>
+            <form class="flex-column-center" action="">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Continuar</button>
+            </form>
+            <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+
+    <div id="registro">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <div style="gap: 8px" class="flex-row-center headline-5 text-align-center">Te damos la bienvenida a
+                <div class="logo"></div>
+            </div>
+            <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
+            <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a onclick="change('registro')"
+                    href="#">Inicia sesión</a></p>
+            <form class="flex-column-center" action="">
+                <input type="text" class="body-1" name="" id="" placeholder="Nombre">
+                <input type="text" class="body-1" name="" id="" placeholder="Apellido">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Crear cuenta</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid MainView">
+        <header id="header" class="HeaderPrincipal">
+            <a href="index.html">
+                <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
+            </a>
+            <div class="container-ht content-center gap-16">
+                <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
+                    <li class="nav-item dropdown button text-button-icon on-background">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoría
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
+                            <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
+                            <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
+                            <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div style="width: fit-content;" class="search-div">
+                    <input type="search" name="search" class="body-1
+                        on-background outline surface" id="search-bar" placeholder="Buscar">
+                </div>
+                <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
+                    <div style="display: inline-block;" class="user"></div>
+                    Iniciar sesión
+                </a>
+                <a href="#" class="button on-background icon-button">
+                    <div style="display: inline-block;" class="cart"></div>
+                </a>
+            </div>
+        </header>
+
+        <nav id="nav-bar" class="surface SubHeader">
+            <a href="index.html#inicio-index" class="body-1 on-background">Inicio</a>
+            <a href="Products.html#inicio-products" class="body-1 on-background">Tienda</a>
+            <a href="aprender-mas.html#inicio-aprender-mas" class="body-1 on-background">Aprender</a>
+            <a href="sobre-nosotros.html#inicio-sobre-nosotros" class="body-1 on-background">Sobre nosotros</a>
+        </nav>
+        
+        <div class="MainImageBackGround ParentAppContainer" id="parentApp">
+
+            <!-- Inicio BackGround Main -->
+            <div id="bg-testimonios">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col col-lg-4 offset-lg-1 TextMainBackground2">
+                            <h1>Testimonios</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin BackGround Main -->
+    
+            <!-- Inicio Titulo Testimonios Main -->
+            <div class="container-fluid newChild">
+                <div class="row">
+                    <div class="col col-lg">
+                        <!-- <h3 class="tituloParent">TRATAMIENTOS</h3> -->
+                        <h1 class="subtituloParent subtituloParentXs">Conoce más sobre <span>nuestros testimonios</span> y
+                            enamórate más de nuestros productos</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Titulo Testimonios Main -->
+    
+            <!-- Inicio Cards Testimonios -->
+            <div class="container-fluid newChild">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row">
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage1">
+                                    <div id='cardImage1InnerDiv'>
+                                        <h2 class="title">Historia de Luisa</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de Luisa</h2>
+                                <p class="description">
+                                    Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                    Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni había
+                                    dado resultados, hasta que empezo a conocer más sobre la medicina natural. </p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(1)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage2">
+                                    <div id='cardImage2InnerDiv'>
+                                        <h2 class="title">Historia de Pablo</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de Pablo</h2>
+                                <p class="description">
+                                    Pablo es un hombre que por años había buscado un tratamiento que le ayudara a quitar el
+                                    constante dolor que sufria de los riñones, trató con diferentes medicamentos y consultó
+                                    a muchos especialistas que la unica solución que le daban era el transplante...</p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(2)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage3">
+                                    <div id='cardImage3InnerDiv'>
+                                        <h2 class="title">Historia de Mariela</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de Mariela</h2>
+                                <p class="description">
+                                    Mariela es madre de una hermosa niña, unos meses después del parto empezó a sentir unos
+                                    dolores en los pechos, inmediatamente fue al médico y le diagnosticaron cancer de mama.
+                                    Después del tratamiento sin ver resultados decidió intentar con la medicina natural...
+                                </p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(3)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage4">
+                                    <div id='cardImage4InnerDiv'>
+                                        <h2 class="title">Historia de las hermanas Smith</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de las hermanas Smith</h2>
+                                <p class="description">
+                                    Karla y Samantha Smith son dos hermanas que en un viaje de vacaciones se infectarón con
+                                    hepatitis, al desconocer de la enfermedad esta llegó a ser de grado E, sin embargo el
+                                    tratamiento no estaba haciendo efecto y se...
+                                </p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(4)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage5">
+                                    <div id='cardImage5InnerDiv'>
+                                        <h2 class="title">Historia de Jose Luis</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de Jose Luis</h2>
+                                <p class="description">
+                                    José Luis es un joven universitario lleno de mucha alegría, le encanta el deporte y
+                                    actualmente esta en uno de los equipos de natación más reconocidos. Hace unos meses josé
+                                    empezó a sentir dolores en su pecho asi que se realizó una serie de exámenes que no
+                                    arrojarón buenos resultados...
+                                </p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(5)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 tarj">
+                                <div class="cardTestimonio" id="cardImage6">
+                                    <div id='cardImage6InnerDiv'>
+                                        <h2 class="title">Historia de las hermanas Smith</h2>
+                                        <p class="description">
+                                            Despues de años sin poder quedar embarazada, da a luz a su primer hijo.
+                                            Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni
+                                            había
+                                            dado resultados, hasta que empezo a conocer más sobre la medicina natural.
+                                            <br>
+                                            <br>
+                                            Sus doctores afirmaron que le habían realizado una histerectomía total meses
+                                            antes.
+                                            <br><br>
+                                            La mujer neozelandesa, de treinta años, consultó a sus médicos afirmando que se
+                                            sentía embarazada, pero no le creyeron. Luego de algunos exámenes se pudo
+                                            comprobar que una pequeña masa crecía en su abdomen y se registraban latidos de
+                                            un diminuto corazón.
+                                            <br><br>
+                                            Eso sí: según el equipo médico, uno de los óvulos de Martin fue fecundado poco
+                                            antes de la operación. El óvulo descendió de las trompas de Falopio y quedó
+                                            adherido a su intestino.
+                                            <br><br>
+                                            Todas estas circunstancias, nos permiten comprender mejor cuales eran las
+                                            razones
+                                            por las cuales “el parto que llegaba a buen término tenía una innegable
+                                            connotación
+                                            festiva”. En tales ocasiones, ”las mujeres del pueblo o del barrio se acercaban
+                                            presurosas a visitar a la madre y al niño, formulando sus felicitaciones”. 4
+                                            Esta alegría
+                                            que se manifestaba ante el éxito de la parturienta era compartida por
+                                            familiares, amigos
+                                            y vecinos
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="title">Historia de Marcos</h2>
+                                <p class="description">
+                                    Despues de años sin poder quedar embarazada, da a luz a su primer hijo. <br>
+                                    Los médicos no podian explicarlo, ya que después de tantos tratamientos ninguni había
+                                    dado resultados, hasta que...
+                                </p>
+                                <div class="btn-verMas">
+                                    <button onClick="desplegarTestimonio(6)" class="btn btn-outline-light">Ver más <i
+                                            class="bi bi-arrow-up"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin Cards Testimonios -->
+        </div>
+
+        <!-- AQUI TERMINA SU CODIGO POR FAVOR NO MODIFICAR NADA DEBAJO -->
+
+        <footer style="margin-top: 40px;">
+            <div class="footTeamTo">
+                <div class="footerTolyContainer1">
+                    <div class="footerTolyCard1">
+                        <img src="img/Footer/FootLogo2.png" alt="" class="pictureTolyFooter">
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Acerca de</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Nosotros</label>
+                            <br>
+                            <label class="subFooterToly">Clinicas</label>
+                            <br>
+                            <label class="subFooterToly">Tratamientos</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Ayuda y Contacto</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Centro de Ayuda</label>
+                            <br>
+                            <label class="subFooterToly">Infotmacion de Seguridad</label>
+                            <br>
+                            <label class="subFooterToly"><a href="mailto:info.herbanic@gmail.com"
+                                    class="toly-decoration-a">info.herbanic@gmail.com</a> </label>
+                            <br>
+                            <div>
+                                <img src="img/Footer/Phone.png" alt="" class="phoneToly">
+                                <label class="subFooterToly"><a href="tel:+50557976465" class="toly-decoration-a"> +505
+                                        2222 7777</a></label>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="footerTolyCard1">
+                        <div>
+                            <label class="encabezadoFooterToly">Comunidad</label>
+                        </div>
+                        <div>
+                            <label class="subFooterToly">Avisos</label>
+                            <br>
+                            <label class="subFooterToly">Donaciones</label>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!---->
+    
+                <div class="footerTolyContainer2">
+                    <div class="footerTolyCard2">
+                        <label class="herbaFooter">HERBANIC</label>
+                        <label class="descriptionFooter">Managua, Nicaragua</label>
+                        <label class="descriptionFooter">HerbaNic, 2022. ©Todos los derechos reservados</label>
+                    </div>
+                </div>
+    
+    
+                <!---->
+    
+                <div class="footerTolyContainer4">
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Terminos y condiciones</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Privacidad</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Aviso Legal</label>
+                    </div>
+                    <div class="footerTolyCard4">
+                        <label class="ultimateFooterLyr">Política de devoluciones</label>
+                    </div>
+                    <div class="footerTolyCard3">
+                        <div>
+                            <a href="https://wa.me/50576549074" target="_blank"><img src="img/Footer/WhatsApp.png" alt=""
+                                    class="redesFooterToly"></a>
+    
+                            <a href="https://es-la.facebook.com/NutricionSaludable.Revista" target="_blank"><img
+                                    src="img/Footer/Facebook.png" alt="" class="redesFooterToly"></a>
+    
+                            <a href="https://www.youtube.com/c/MedicinatvNutricion" target="_blank"><img
+                                    src="img/Footer/YouTube.png" alt="" class="redesFooterToly"></a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script>
+        let header1 = document.getElementById("HeaderPrincipal");
+        let header1Height = window.getComputedStyle(header1, null).height;
+        let header2 = document.getElementsByClassName('SubHeader')[0];
+        let header2Height = window.getComputedStyle(header2, null).height;
+        header2.style.marginTop = header1Height;
+        // const parentMarginTop = `${header1Height.split('px')[0] + header2Height.split('px')[0]}px`;
+        // console.log(parentMarginTop);
+        // document.getElementById('parentApp').style.marginTop = header1Height + header2Height;
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/setHeader2MarginTop.js"></script>
+    <script src="js/desplegarTestimonios.js"></script>
+</body>
+
+</html>
