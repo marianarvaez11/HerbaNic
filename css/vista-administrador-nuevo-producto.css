@@ -1,0 +1,86 @@
+
+#admin form{
+    width: 100%;
+}
+
+#admin form input,
+#admin form textarea,
+#admin form select,
+#admin form select option{
+    border: 1px solid var(--bg-t);
+    border-radius: 8px;
+    width: 100%;
+    height: 44px;
+    min-height: 34px;
+    padding-left: 10px;
+    background-color: var(--surface);
+}
+
+
+#admin button{
+    border: 1px solid var(--bg-t);
+    border-radius: 8px;
+    width: 100%;
+    height: 44px;
+    min-height: 34px;
+}
+
+#admin form input::placeholder,
+#admin form textarea::placeholder{
+    color: var(--primary-color);
+}
+
+#admin form input[type="file"] {
+    display: none;
+}
+
+#admin .boton{
+    width: 20%;
+    color: var(--bg-t);
+    border-radius: 8px;
+    height: 44px;
+    min-height: 34px;
+    border: none;
+}
+
+#admin .boton:hover{
+    background-color: #91CA16;
+}
+
+#admin .boton-secundario{
+    width: 20%;
+    color: var(--bg-t);
+    border-radius: 8px;
+    height: 44px;
+    min-height: 34px;
+    border: 1px solid var(--bg-t);
+    background-color: white;
+}
+
+#admin .boton-secundario:hover{
+    background-color: #F0FBDA;
+}
+
+.custom-file-upload {
+    border: 1px solid var(--bg-t);
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    min-height: 34px;
+    padding-left: 10px;
+    background-color: var(--surface);/*
+    background-image: url(../img/brand/herbanic-isotipo-tp.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    cursor: pointer;
+}
+
+.add-image{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../icons/add-image.svg);
+}

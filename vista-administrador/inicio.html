@@ -73,50 +73,155 @@
             </div>
         </header>
 
-        <main id="admin">
-            <div class="flex-column-left">
-                <button class="borderless-transparent flex-row-left headline-6">
+        <main id="admin" class="surface-variant2">
+            <div class="flex-column-haleft-vastart">
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="inicio.html">
                     <div class="icon home"></div>
-                    <a href="inicio.html">Inicio</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
+                    Inicio
+                </a>
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="pedidos.html">
                     <div class="icon pedidos"></div>
-                    <a href="pedidos.html">Pedidos</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
-                    <div class="icon productos"></div>
-                    <a href="productos.html">Productos</a>
-                </button>
-                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
-                    <a href="productos.html">Todos los productos</a>
-                </button>
-                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
-                    <a href="inventario.html">Invetario</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
-                    <div class="icon clientes"></div>
-                    <a href="clientes.html">Clientes</a>
-                </button>
+                    Pedidos
+                </a>
+                <div style="width:100%;">
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="font-weight: bold; color: var(--bg-s);" href="productos.html">
+                        <div class="icon productos"></div>Productos
+                    </a>
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="padding-left: 34px; color: var(--bg-s);" href="productos.html">Todos los productos</a>
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="padding-left: 34px; color: var(--bg-s);" href="inventario.html">Inventario</a>
+                </div>
+
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="clientes.html">
+                    <div class="icon clientes"></div>Clientes
+                </a>
             </div>
             <div class="contenido">
                 <div class="datos">
-                    <h3 style="margin-bottom: 40px;" class="headline-3">Datos actuales del sitio</h3>
+                    <h3 style="margin-bottom: 30px; color:  var(--bg-s)" class="headline-3">Datos actuales del sitio
+                    </h3>
                     <div class="flex-row-center">
-                        <div class="dato">
-                            <h4 style="margin-bottom: 20px;" class="headline-4">Ventas totales</h4>
+                        <div class="dato flex-column-haleft-vacenter">
+                            <h4 style="margin-bottom: 20px; color:  var(--bg-s);" class="headline-4">Ventas totales</h4>
                             <h5 class="headline-5">$ 400 en ventas</h5>
                             <div class="line"></div>
                             <h5 class="headline-5">4 pedidos</h5>
                         </div>
-                        <div class="dato">
-                            <h4 style="margin-bottom: 20px;" class="headline-4">Ventas totales</h4>
-                            <h5 class="headline-5">$ 400 en ventas</h5>
+                        <div class="dato flex-column-haleft-vacenter">
+                            <h4 style="margin-bottom: 20px; color:  var(--bg-s)" class="headline-4">Sesiones totales
+                            </h4>
+                            <h5 class="headline-5">25</h5>
                             <div class="line"></div>
-                            <h5 class="headline-5">4 pedidos</h5>
+                            <h5 class="headline-5">3 visitantes</h5>
                         </div>
                     </div>
                 </div>
-                <div class="flex-row-left"></div>
+                <a style="justify-content: space-between; color: var(--bg-s); padding-left: 24px;" class="pedidos-pendientes flex-row-left"
+                    href="pedidos.html">
+                    <h5 class="headline-5 flex-row-center" style="padding: 10px 0px;">3 pedidos por completar
+                    </h5>
+                    <div style="display: inline-flex;" class="icon rigth-arrow"></div>
+                </a>
+                <div class="productos-mas-vendidos">
+                    <h3 style="margin: 30px 0px; color:  var(--bg-s)" class="headline-3">Productos más vendidos
+                    </h3>
+                    <div style="width: 100%; border-radius: 8px;" class="flex-row-rigth">
+                        <select class="headline-5" name="fecha" id="">
+                            <option value="Hoy">Hoy</option>
+                            <option value="Semana">Semana</option>
+                            <option value="Mes">Mes</option>
+                        </select>
+                    </div>
+
+                    <div class="contenedor-tarjetas">
+                        <div class="tarjeta">
+                            <div class="imagen-producto capsulas-sleepAid">
+
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Cápsulas SleepAid</h4>
+                            <p class="body-1 justify-text"><span style="font-weight: bold; margin-bottom: 10px;">Cantidad vendida: </span>54</p>
+                            <p class="body-1 justify-text"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-producto capsulas-immune">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Cápsulas Immune</h4>
+                            <p class="body-1 justify-text"><span style="font-weight: bold; margin-bottom: 10px;">Cantidad vendida: </span>46</p>
+                            <p class="body-1 justify-text"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-producto capsulas-breathAid">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Cápsulas BreathAid</h4>
+                            <p class="body-1 justify-text"><span style="font-weight: bold; margin-bottom: 10px;">Cantidad vendida: </span>37</p>
+                            <p class="body-1 justify-text"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-producto capsulas-sleepAid">
+
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Cápsulas SleepAid</h4>
+                            <p class="body-1 justify-text"><span style="font-weight: bold; margin-bottom: 10px;">Cantidad vendida: </span>35</p>
+                            <p class="body-1 justify-text"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-producto capsulas-immune">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4">Cápsulas Immune</h4>
+                            <p class="body-1 justify-text"><span style="font-weight: bold; margin-bottom: 10px;">Cantidad vendida: </span>28</p>
+                            <p class="body-1 justify-text"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clientes-del-dia">
+                    <h3 style="margin: 30px 0px; color:  var(--bg-s)" class="headline-3">Clientes que más han comprado
+                    </h3>
+                    <div style="width: 100%; border-radius: 8px;" class="flex-row-rigth">
+                        <select class="headline-5" name="fecha" id="">
+                            <option value="Hoy">Hoy</option>
+                            <option value="Semana">Semana</option>
+                            <option value="Mes">Mes</option>
+                        </select>
+                    </div>
+
+                    <div class="contenedor-tarjetas">
+                        <div class="tarjeta">
+                            <div class="imagen-usuario person1">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4 text-align-center">Katy</h4>
+                            <p class="body-1 text-align-center"><span style="font-weight: bold;">Monto($): </span>850</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-usuario person2">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4 text-align-center">Edwin</h4>
+                            <p class="body-1 text-align-center"><span style="font-weight: bold;">Monto($): </span>610</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-usuario person3">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4 text-align-center">Luis</h4>
+                            <p class="body-1 text-align-center"><span style="font-weight: bold;">Monto($): </span>580</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-usuario person4">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4 text-align-center">Sara</h4>
+                            <p class="body-1 text-align-center"><span style="font-weight: bold;">Monto($): </span>450</p>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="imagen-usuario person5">
+                            </div>
+                            <h4 style="margin-bottom: 20px;" class="headline-4 text-align-center">Silvia</h4>
+                            <p class="body-1 text-align-center"><span style="font-weight: bold;">Monto($): </span>360</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 

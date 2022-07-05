@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/color.css">
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/vista-administrador.css">
+    <link rel="stylesheet" href="../css/vista-administrador-nuevo-producto.css">
     <script src="../js/overlay.js"></script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/setHeader2MarginTop.js"></script>
@@ -73,33 +74,73 @@
             </div>
         </header>
 
-        <main id="admin">
-            <div class="flex-column-left">
-                <button class="borderless-transparent flex-row-left headline-6">
+        <main id="admin" class="surface-variant2">
+            <div class="flex-column-haleft-vastart">
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="inicio.html">
                     <div class="icon home"></div>
-                    <a href="inicio.html">Inicio</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
+                    Inicio
+                </a>
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="pedidos.html">
                     <div class="icon pedidos"></div>
-                    <a href="pedidos.html">Pedidos</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
-                    <div class="icon productos"></div>
-                    <a href="productos.html">Productos</a>
-                </button>
-                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
-                    <a href="productos.html">Todos los productos</a>
-                </button>
-                <button style="padding-left: 34px;" class="borderless-transparent flex-row-left headline-6">
-                    <a href="inventario.html">Invetario</a>
-                </button>
-                <button class="borderless-transparent flex-row-left headline-6">
-                    <div class="icon clientes"></div>
-                    <a href="clientes.html">Clientes</a>
-                </button>
-            </div>
-            <div class="">
+                    Pedidos
+                </a>
+                <div style="width:100%;">
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="font-weight: bold; color: var(--bg-s);" href="productos.html">
+                        <div class="icon productos"></div>Productos
+                    </a>
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="padding-left: 34px; color: var(--bg-s);" href="productos.html">Todos los productos</a>
+                    <a class="borderless-transparent flex-row-left headline-6"
+                        style="padding-left: 34px; color: var(--bg-s);" href="inventario.html">Inventario</a>
+                </div>
 
+                <a class="borderless-transparent flex-row-left headline-6"
+                    style="font-weight: bold; color: var(--bg-s);" href="clientes.html">
+                    <div class="icon clientes"></div>Clientes
+                </a>
+            </div>
+            <div class="contenido">
+                <a href="productos.html">
+                    <h3 style="margin-bottom: 30px; color:  var(--bg-s)" class="headline-3">
+                        <div style="display: inline-flex;" class="icon left-arrow">
+                        </div>
+                        Agregar producto
+                    </h3>
+                </a>
+                <div style="padding: 40px; border-radius: 10px; border: 1px solid var(--bg-t); background-color: white;" class="flex-column-center">
+                        <form class="flex-row-center" style="justify-content: space-between;" action="">
+                            <input style="width: 50%;" type="text" placeholder="Nombre del producto">
+                            <input style="width: 30%;" type="number" min="1" step="any" placeholder="$ Precio" />
+                        </form>
+                        <form style="margin: 20px 0px;" action="">
+                            <textarea style="height: 84px; padding-top: 10px;" name="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+                        </form>
+                        <form action="">
+                            <label class="flex-column-center custom-file-upload" style="margin-bottom: 20px;">
+                            <input type="file"/>
+                            <div style="margin-bottom: 30px;" class="add-image"></div>
+                            <div class="flex-column-center boton secondary-color button">Agregar imagen</div>
+                        </label>
+                        </form>
+                        <form class="flex-row-center" style="justify-content: space-between;" action="">
+                            <input type="number" style="width: 50%; border-radius: 8px;" min="0" max="999" placeholder="Cantidad disponible">
+                            <div style="width: 30%; justify-content: end;" class="flex-row-center" action="">
+                                <label style="width: fit-content; margin-right: 25px;" for="Tipo">Tipo</label>
+                                <select style="width: 50%;" name="Tipo" id="">
+                                    <option value="Frascos">Frascos</option>
+                                    <option value="Cajas">Cajas</option>
+                                    <option value="Sobres">Sobres</option>
+                                </select>
+                            </div>
+                        </form>
+                </div>
+                <div class="flex-row-rigth" style="gap: 30px;">
+                    <button style="width: 20%;" class="flex-column-center boton secondary-color button">Guardar producto</button>
+                    <button style="width: 20%;" class="flex-column-center boton-secundario button">Descartar</button>
+                </div>
             </div>
         </main>
 

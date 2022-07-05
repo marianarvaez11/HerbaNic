@@ -1,13 +1,17 @@
+#admin *{
+    margin: 0px;
+    padding: 0px;
+}
+
 #admin{
     display: grid;
     grid-template-columns: 0.7fr 3.3fr;
-    height: 100%;
     
     border-top: 1px solid var(--bg-t);
 }
 
-#admin .flex-column-left{
-    padding-top: 20px;
+#admin .flex-column-haleft-vastart{
+    padding: 20px 5px 0px 5px;
     height: 100%;
     gap: 5px;
     border-right: 1px solid var(--bg-t);
@@ -16,23 +20,46 @@
 #admin .flex-row-left{
     gap: 5px;
     padding: 5px;
-    width: 100%;
-    border-radius: 5px;
+    width: 100%;/* 
+    border-radius: 5px; */
 }
 
 #admin .flex-row-left:hover {
     background-color: #f2f2f2;
 }
 
-#admin .contenido .datos .flex-row-center{
-    margin: 40px;
+.surface-variant2{
+    background-color: #F9FDED;
 }
 
-#admin .contenido .datos .dato{
-    width: 40%;
+#admin .contenido{
+    margin: 40px;
+    display: grid;
+    row-gap: 30px;
+    grid-template-rows: repeat(4, auto);
+}
+
+#admin .contenido .flex-row-center{
+    justify-content: space-between;
+}
+
+#admin .contenido .pedidos-pendientes.flex-row-left{
+    border: 1px solid var(--bg-t);
+    background-color: white;
+    border-radius: 8px;
+}
+
+#admin .contenido .datos .dato.flex-column-haleft-vacenter{
+    background-color: white;
+    width: 45%;
+    gap: 24px;
     padding: 24px;
     border: 1px solid var(--bg-t);
     border-radius: 8px;
+    background-image: url(../img/brand/herbanic-isotipo-tp.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 #admin a{
@@ -48,6 +75,80 @@ a:active{
 
 #admin a:hover{
     color: var(--bg-t);
+}
+
+#admin .contenedor-tarjetas {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+}
+
+#admin .contenedor-tarjetas .tarjeta{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#admin .contenedor-tarjetas .tarjeta:hover{
+    cursor: pointer;
+    border: 1px solid var(--bg-t);
+    background-color: white;
+}
+
+#admin .contenedor-tarjetas .tarjeta .imagen-producto{
+    height: 15vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tabletas-brahmi{
+    background-image: url(../img/card-images/ProductCards/tabletaBrahmi.png);
+}
+
+.capsulas-immune{
+    background-image: url(../img/card-images/ProductCards/capsulaImmune.png);
+}
+
+.capsulas-breathAid{
+    background-image: url(../img/card-images/ProductCards/capsulaBreathAid.png);
+}
+
+.capsulas-sleepAid{
+    background-image: url(../img/card-images/ProductCards/capsulaSleepAid.png);
+}
+
+#admin .contenedor-tarjetas .tarjeta .imagen-usuario{
+    margin-bottom: 20px;
+    border-radius: 28vh;
+    height: 28vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.person1{
+    background-image: url(../img/Usuarios/person1.jpg);
+}
+
+.person2{
+    background-image: url(../img/Usuarios/person2.jpg);
+}
+
+.person3{
+    background-image: url(../img/Usuarios/person3.jpg);
+}
+
+.person4{
+    background-image: url(../img/Usuarios/person4.jpg);
+}
+
+.person5{
+    background-image: url(../img/Usuarios/person5.jpg);
+}
+
+.justify-text{
+    text-align: justify;
 }
 
 .line{
@@ -82,4 +183,12 @@ a:active{
 
 .icon.admin{
     background-image: url(../icons/admin.svg);
+}
+
+.icon.rigth-arrow{
+    background-image: url(../icons/right-arrow.svg);
+}
+
+.icon.left-arrow{
+    background-image: url(../icons/left-arrow.svg);
 }

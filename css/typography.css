@@ -34,6 +34,14 @@
     margin: 0%;
 }
 
+.headline-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-size: 34px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+}
+
 .headline-5 {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
