@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/brand/favicon.png" type="image/x-icon">
+
+    <!-- css styles -->
+
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/registro-e-inicio-de-sesion.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <script src="js/overlay.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/setHeader2MarginTop.js"></script>
+
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--  -->
+
+    <title>Carrito</title>
+</head>
+<body>
+    
+    <div id="overlay" onclick="overlay_off()"></div>
+    <div id="inicio-sesion">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <h3 class="headline-3 text-align-center">Iniciar sesión</h3>
+            <p class="subhead-1 text-align-center">¿Aún no tienes una cuenta? <a onclick="change('inicio-sesion')"
+                    href="#">Regístrate</a></p>
+            <form class="flex-column-center" action="">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Continuar</button>
+            </form>
+            <a href="#" class="subhead-2 primary-color text-align-center">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+
+    <div id="registro">
+        <button onclick="overlay_off()" class="borderless-transparent close"></button>
+        <div class="flex-column-center">
+            <div style="gap: 8px" class="flex-row-center headline-5 text-align-center">Te damos la bienvenida a
+                <div class="logo"></div>
+            </div>
+            <h3 class="headline-3 text-align-center">Crear una cuenta</h3>
+            <p class="subhead-1 text-align-center">¿Ya tienes una cuenta? <a onclick="change('registro')"
+                    href="#">Inicia sesión</a></p>
+            <form class="flex-column-center" action="">
+                <input type="text" class="body-1" name="" id="" placeholder="Nombre">
+                <input type="text" class="body-1" name="" id="" placeholder="Apellido">
+                <input type="email" class="body-1" name="" id="" placeholder="Correo electrónico">
+                <input type="password" class="body-1" name="" id="" placeholder="Contraseña">
+                <button class="button secondary-color">Crear cuenta</button>
+            </form>
+        </div>
+    </div>
+
+    <header id="header" class="HeaderPrincipal">
+        <a href="index.html">
+            <div style="height: 3.5rem; width: 11rem;" class="logo"></div>
+        </a>
+        <div class="container-ht content-center gap-16">
+            <ul class="navbar-nav col-lg-2 button text-button-icon on-background">
+                <li class="nav-item dropdown button text-button-icon on-background">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoría
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Products.html#estresContainer">Estrés</a></li>
+                        <li><a class="dropdown-item" href="Products.html#indigContainer">Indigestión</a></li>
+                        <li><a class="dropdown-item" href="Products.html#insomContainer">Insomnio</a></li>
+                        <li><a class="dropdown-item" href="Products.html">Control de Peso</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div style="width: fit-content;" class="search-div">
+                <input type="search" name="search" class="body-1
+                    on-background outline surface" id="search-bar" placeholder="Buscar">
+            </div>
+            <a onclick="overlay_on('inicio-sesion');" href="#" class="text-button-icon button on-background">
+                <div style="display: inline-block;" class="user"></div>
+                Iniciar sesión
+            </a>
+            <a href="#" class="button on-background icon-button">
+                <div style="display: inline-block;" class="cart"></div>
+            </a>
+        </div>
+    </header>
+
+    <nav id="nav-bar" class="surface">
+        <a href="index.html#inicio-index" class="body-1 on-background">Inicio</a>
+            <a href="Products.html#inicio-products" class="body-1 on-background">Tienda</a>
+            <a href="aprender-mas.html#inicio-aprender-mas" class="body-1 on-background">Aprender</a>
+            <a href="sobre-nosotros.html#inicio-sobre-nosotros" class="body-1 on-background">Sobre nosotros</a>
+    </nav>
+
+    <main class="container-ht pd-24 gap-12 grid grid-columns-12">
+        <section style="grid-column: span 7;" class="container-vt pd-24 gap-24 border-outline br-all-12">
+            <h3 class="headline-3 on-background">Carrito de compras</h3>
+            <hr>
+
+            <div class="container-ht gap-12 pd-12 surface-variant br-all-12">
+                <div style="background-image: url(./img/product.png);" class="container-img card-ht br-all-24">
+                    
+                </div>
+                <div style="width: 100%;" class="container-vt gap-12">
+                    <div class="container-ht wth-full">
+                        <h5 class="headline-5 primary-color">Garbanzos</h5>
+                        <a href="#" class="material-icons md-24 primary-color">
+                            delete
+                        </a>
+                    </div>
+                    <p class="subhead-1 on-background">12 unidades por enbase.</p>
+                    <p class="caption on-background">Disponible</p>
+                    <div class="container-ht wth-full">
+                        <div class="container-ht br-all-50 gap-12 content-center">
+                            <button class="material-icons icon-button on-background">
+                                remove_circle_outline
+                            </button>
+                            <p class="button">1</p>
+                            <button class="material-icons icon-button on-background">
+                                add_circle_outline
+                            </button>
+                        </div>
+                        <p class="caption on-background">C$ 230</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-ht gap-12 pd-12 surface-variant br-all-12">
+                <div style="background-image: url(./img/product.png);" class="container-img card-ht br-all-24">
+                    
+                </div>
+                <div style="width: 100%;" class="container-vt gap-12">
+                    <div class="container-ht wth-full">
+                        <h5 class="headline-5 primary-color">Garbanzos</h5>
+                        <a href="#" class="material-icons md-24 primary-color">
+                            delete
+                        </a>
+                    </div>
+                    <p class="subhead-1 on-background">12 unidades por enbase.</p>
+                    <p class="caption on-background">Disponible</p>
+                    <div class="container-ht wth-full">
+                        <div class="container-ht br-all-50 gap-12 content-center">
+                            <button class="material-icons icon-button on-background">
+                                remove_circle_outline
+                            </button>
+                            <p class="button">1</p>
+                            <button class="material-icons icon-button on-background">
+                                add_circle_outline
+                            </button>
+                        </div>
+                        <p class="caption on-background">C$ 230</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="grid-column: span 5;" class="container-vt pd-24 gap-24 border-outline br-all-24">
+            <div class="container-ht wth-full">
+                <h5 class="subhead-1 primary-color">Artículos (2)</h5>
+                <p class="subhead-1 on-background">C$ 460</p>
+            </div>
+            <div class="container-ht wth-full">
+                <h5 class="subhead-1 primary-color">Envío</h5>
+                <p class="subhead-1 on-background">Gratis</p>
+            </div>
+            <hr>
+            <div class="container-ht wth-full">
+                <h5 class="headline-5 primary-color">Subtotal</h5>
+                <p class="subhead-1 primary-color">C$ 460</p>
+            </div>
+            <a href="./pago.html" class="button filled-button">Proceder al pago</a>
+        </section>
+
+    </main>
+
+</body>
+</html>
