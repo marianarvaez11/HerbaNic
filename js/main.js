@@ -107,9 +107,60 @@ function commentText() {
     let element = document.createElement('div');
     let quote = document.getElementById('comment').value;
     element.className = 'container-vt gap-12';
-    element.innerHTML = '<hr>'+
-    '<p class="body-1 on-background">'+'“'+ quote +'”'+
-    '</p><div class="container-ht gap-12"><img style="width: 56px; height: 56px;" class="br-all-50" src="./img/person.png" alt="profile"><div class="container-vt"><a href="#" class="button on-background">Joseph Martínez</a><span class="caption on-background">Paciente</span></div></div>';
+    element.innerHTML = '<hr>' +
+        '<p class="body-1 on-background">' + '“' + quote + '”' +
+        '</p><div class="container-ht gap-12"><img style="width: 56px; height: 56px;" class="br-all-50" src="./img/person.png" alt="profile"><div class="container-vt"><a href="#" class="button on-background">Joseph Martínez</a><span class="caption on-background">Paciente</span></div></div>';
 
     document.getElementById('comments').appendChild(element);
+}
+
+function controlInputNumber(idNumber, idPurchaseText, add) {
+    let value = document.getElementById(idNumber).value;
+    if (add) {
+        let valueNumber = Number(value) + 1;
+        let elements = document.querySelectorAll("span[id*='price-pruchase']");
+        document.getElementById(idPurchaseText).innerHTML = + valueNumber * 230;
+        document.getElementById(idNumber).value = valueNumber;
+
+        valueNumber = 0;
+        elements.forEach(element => {
+
+            valueNumber += parseInt(element.textContent);
+        });
+
+        elements = document.querySelectorAll("span[id*='purchase']");
+
+        elements.forEach(element => {
+            element.innerHTML = valueNumber;
+        });
+    }
+    else {
+        if (value > 1) {
+            let valueNumber = Number(value) - 1;
+            let elements = document.querySelectorAll("span[id*='price-pruchase']");
+            document.getElementById(idNumber).value = valueNumber;
+            document.getElementById(idPurchaseText).innerHTML = valueNumber * 230;
+
+            valueNumber = 0;
+            elements.forEach(element => {
+
+                valueNumber += parseInt(element.textContent);
+            });
+
+            elements = document.querySelectorAll("span[id*='purchase']");
+
+            elements.forEach(element => {
+                element.innerHTML = valueNumber;
+            });
+        }
+        else {
+            let valueNumber = Number(1);
+            document.getElementById(idNumber).value = Number(1);
+            document.getElementById(idPurchaseText).innerHTML = valueNumber * 230;
+        }
+    }
+}
+
+function hideCard(idCard) {
+    document.getElementById(idCard).style.display = 'none';
 }
