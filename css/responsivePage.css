@@ -1,6 +1,14 @@
 
 @media screen and (max-width: 1001px) {
-
+    .divisionToly {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+    }
+    .titleTolyA{
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 972px) {
@@ -13,7 +21,27 @@
         width: 250px;
         height: 125px;;
     }
-    
+    .encabezadoFooterToly{
+        font-size: 20px;
+    }
+    .subFooterToly{
+        font-size: 17px;
+    }
+    .herbaFooter{
+        font-size: 24px;
+    }
+    .descriptionFooter{
+        font-size: 18px;
+    }
+    .ultimateFooterLyr{
+        font-size: 14px;
+    }
+    .lyricTolyOrigen{
+        font-size: 42px !important;
+    }
+    .lyricToly {
+        font-size: 22px !important;
+    }
 }
 
 @media screen and (max-width: 896px) {
@@ -23,4 +51,154 @@
     .subFooterToly{
         font-size: 14px;
     }
-}   
+    .pictureTolyFooter{
+        width: 220px;
+        height: 140px;;
+    }
+    .encabezadoFooterToly{
+        font-size: 18px;
+    }
+    .subFooterToly{
+        font-size: 16px;
+    }
+    .herbaFooter{
+        font-size: 22px;
+    }
+    .descriptionFooter{
+        font-size: 17px;
+    }
+    .ultimateFooterLyr{
+        font-size: 13px;
+    }
+} 
+
+@media screen and (max-width: 845px) {
+    .divisionToly {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .titleTolyA{
+        font-size: 19px;
+    }
+    .pictureTolyFooter{
+        width: 210px;
+        height: 130px;;
+    }
+    .encabezadoFooterToly{
+        font-size: 16px;
+    }
+    .subFooterToly{
+        font-size: 14px;
+    }
+    .herbaFooter{
+        font-size: 20px;
+    }
+    .descriptionFooter{
+        font-size: 16px;
+    }
+    .ultimateFooterLyr{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .pictureTolyFooter{
+        width: 190px;
+        height: 100px;;
+    }
+    .encabezadoFooterToly{
+        font-size: 15px;
+    }
+    .subFooterToly{
+        font-size: 13.5px;
+    }
+    .herbaFooter{
+        font-size: 19px;
+    }
+    .descriptionFooter{
+        font-size: 15px;
+    }
+    .ultimateFooterLyr{
+        font-size: 11px;
+    }
+    .lyricTolyOrigen{
+        font-size: 32 !important;
+    }
+    .lyricToly {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 751px) {
+    .divisionToly {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .titleTolyA{
+        font-size: 16px;
+    }
+    .pictureTolyFooter{
+        width: 180px;
+        height: 90px;;
+    }
+    /*671
+    .footerTolyContainer4{
+        grid-template-columns: 2fr 1.5fr 1.5fr 2fr 5fr;
+    }
+    */
+}
+
+@media screen and (max-width: 675px) {
+    .footerTolyContainer4{
+        grid-template-columns: 2fr 1.5fr 1.5fr 2fr 3fr;
+    }
+    .encabezadoLista {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .pictureTolyFooter{
+        width: 150;
+        height: 75;;
+    }
+    .footerTolyContainer1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px; 
+    }
+    .lyricTolyOrigen{
+        font-size: 30px !important;
+    }
+    .lyricToly {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    .footerTolyContainer4{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        margin: 9px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .footerTolyContainer4{
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        margin: 9px;
+    }
+    .divisionToly {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+    }
+    .titleTolyA{
+        font-size: 15px;
+    }
+
+    .lyricToly {
+        font-size: 14px !important;
+    }
+}
